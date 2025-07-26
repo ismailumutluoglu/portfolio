@@ -703,17 +703,332 @@
     </section>
 
     <!-- Projects Section -->
+    <!-- Projects Section -->
     <section id="projects" class="projects-section py-5">
       <div class="container">
+        <!-- Section Header -->
         <div class="row">
           <div class="col-lg-12">
             <div class="section-header text-center mb-5">
               <h2 class="section-title">Projelerim</h2>
-              <p class="section-subtitle">Geliştirdiğim bazı projeler</p>
+              <p class="section-subtitle">
+                Geliştirdiğim bazı projeler ve çalışmalarım
+              </p>
             </div>
           </div>
         </div>
-        <!-- Projects content buraya gelecek -->
+
+        <!-- Project Filters -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fas fa-layer-group me-1"></i>Tümü
+          </button>
+          <button class="filter-btn" data-filter="web">
+            <i class="fas fa-globe me-1"></i>Web Apps
+          </button>
+          <button class="filter-btn" data-filter="mobile">
+            <i class="fas fa-mobile-alt me-1"></i>Mobile
+          </button>
+          <button class="filter-btn" data-filter="fullstack">
+            <i class="fas fa-code me-1"></i>Full Stack
+          </button>
+          <button class="filter-btn" data-filter="ui">
+            <i class="fas fa-paint-brush me-1"></i>UI/UX
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: E-Commerce Platform -->
+          <div class="project-card" data-category="fullstack web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-status completed">Tamamlandı</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">
+                Modern e-ticaret platformu. Kullanıcı yönetimi, ürün kataloğu,
+                sepet sistemi, ödeme entegrasyonu ve admin paneli içeren
+                full-stack uygulama.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag react">React.js</span>
+                <span class="tech-tag node">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe API</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">Redux</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ismailumutluoglu/ecommerce-platform"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                >
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+                <a href="#" class="project-btn project-btn-secondary">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+              <div class="project-stats">
+                <div class="project-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  Mart 2024
+                </div>
+                <div class="project-views">
+                  <i class="fas fa-eye"></i>
+                  1.2k görüntüleme
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Task Management App -->
+          <div class="project-card" data-category="web fullstack">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <div class="project-status completed">Tamamlandı</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Task Management System</h3>
+              <p class="project-description">
+                Takım çalışması için geliştirilmiş proje yönetim uygulaması.
+                Kanban board, zaman takibi, dosya paylaşımı ve real-time
+                bildirimler.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag vue">Vue.js</span>
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">Vuex</span>
+                <span class="tech-tag">PHP</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ismailumutluoglu/task-management"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                >
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+                <a href="#" class="project-btn project-btn-secondary">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+              <div class="project-stats">
+                <div class="project-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  Ocak 2024
+                </div>
+                <div class="project-views">
+                  <i class="fas fa-eye"></i>
+                  892 görüntüleme
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Weather App -->
+          <div class="project-card" data-category="mobile web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <div class="project-status completed">Tamamlandı</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Weather Forecast App</h3>
+              <p class="project-description">
+                Progressive Web App (PWA) olarak geliştirilmiş hava durumu
+                uygulaması. Konum bazlı tahmin, offline çalışma ve push
+                notification desteği.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag javascript">JavaScript</span>
+                <span class="tech-tag">PWA</span>
+                <span class="tech-tag">Service Worker</span>
+                <span class="tech-tag">OpenWeather API</span>
+                <span class="tech-tag">Geolocation</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ismailumutluoglu/weather-app"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                >
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+                <a href="#" class="project-btn project-btn-secondary">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+              <div class="project-stats">
+                <div class="project-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  Kasım 2023
+                </div>
+                <div class="project-views">
+                  <i class="fas fa-eye"></i>
+                  654 görüntüleme
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Portfolio Website -->
+          <div class="project-card" data-category="web ui">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="project-status in-progress">Devam Ediyor</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Personal Portfolio</h3>
+              <p class="project-description">
+                Modern ve responsive kişisel portfolio web sitesi. Dark/light
+                theme, animasyonlar ve modüler CSS yapısı ile geliştirildi.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag javascript">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">Font Awesome</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ismailumutluoglu/portfolio"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                >
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+                <a href="#" class="project-btn project-btn-secondary">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+              <div class="project-stats">
+                <div class="project-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  Temmuz 2025
+                </div>
+                <div class="project-views">
+                  <i class="fas fa-eye"></i>
+                  2.1k görüntüleme
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Chat Application -->
+          <div class="project-card" data-category="fullstack web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <i class="fas fa-comments"></i>
+              </div>
+              <div class="project-status completed">Tamamlandı</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Real-time Chat App</h3>
+              <p class="project-description">
+                Socket.io kullanarak geliştirilmiş gerçek zamanlı sohbet
+                uygulaması. Grup sohbetleri, dosya paylaşımı ve message
+                encryption özellikleri.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag react">React.js</span>
+                <span class="tech-tag node">Node.js</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">Encryption</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ismailumutluoglu/chat-app"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                >
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+                <a href="#" class="project-btn project-btn-secondary">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+              <div class="project-stats">
+                <div class="project-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  Eylül 2023
+                </div>
+                <div class="project-views">
+                  <i class="fas fa-eye"></i>
+                  1.5k görüntüleme
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Dashboard Template -->
+          <div class="project-card" data-category="ui web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="project-status completed">Tamamlandı</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Admin Dashboard</h3>
+              <p class="project-description">
+                Modern admin dashboard template. Charts, tables, form components
+                ve responsive tasarım ile kullanıma hazır şablon.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag angular">Angular</span>
+                <span class="tech-tag typescript">TypeScript</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">Angular Material</span>
+                <span class="tech-tag">RxJS</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ismailumutluoglu/admin-dashboard"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                >
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+                <a href="#" class="project-btn project-btn-secondary">
+                  <i class="fas fa-external-link-alt"></i>Demo
+                </a>
+              </div>
+              <div class="project-stats">
+                <div class="project-date">
+                  <i class="fas fa-calendar-alt"></i>
+                  Haziran 2023
+                </div>
+                <div class="project-views">
+                  <i class="fas fa-eye"></i>
+                  3.2k görüntüleme
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+          <button class="load-more-btn" id="loadMoreProjects">
+            <i class="fas fa-plus me-2"></i>Daha Fazla Proje Yükle
+          </button>
+        </div>
       </div>
     </section>
 
@@ -769,5 +1084,6 @@
     <!-- Custom JS Files -->
     <script src="js/app.js"></script>
     <script src="js/modules/experience-tabs.js"></script>
+    <script src="js/modules/project-filter.js"></script>
   </body>
 </html>
