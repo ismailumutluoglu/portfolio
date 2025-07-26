@@ -14,6 +14,7 @@ class Animations {
   init() {
     this.setupIntersectionObserver();
     this.setupScrollAnimations();
+    this.setupProjectAnimations();
   }
 
   // Counter animation
@@ -108,6 +109,35 @@ class Animations {
         tag.style.transform = 'translateY(0) scale(1)';
       });
     });
+  }
+
+  // Project animations on scroll
+  setupProjectAnimations() {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const projectCards = entry.target.querySelectorAll('.project-card');
+          
+          projectCards.forEach((card, index) => {
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            }, index * 150);
+          });
+        }
+      });
+    }, observerOptions);
+
+    // Observe projects section
+    const projectsSection = document.querySelector('.projects-section');
+    if (projectsSection) {
+      observer.observe(projectsSection);
+    }
   }
 }
 

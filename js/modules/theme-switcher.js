@@ -12,6 +12,7 @@ class ThemeSwitcher {
     this.setInitialTheme();
     this.addThemeToggleHandler();
     this.updateThemeIcon();
+    this.updateFooterTheme();
   }
 
   setInitialTheme() {
@@ -55,6 +56,14 @@ class ThemeSwitcher {
       icon.className = 'fas fa-sun';
     } else {
       icon.className = 'fas fa-moon';
+    }
+  }
+
+  updateFooterTheme() {
+    const footer = document.querySelector('.footer');
+    if (footer) {
+      // Footer theme elements can be updated here if needed
+      console.log(`Footer theme updated to: ${this.currentTheme}`);
     }
   }
 }
