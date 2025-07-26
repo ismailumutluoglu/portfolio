@@ -1033,17 +1033,264 @@
     </section>
 
     <!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact" class="contact-section py-5">
       <div class="container">
+        <!-- Section Header -->
         <div class="row">
           <div class="col-lg-12">
             <div class="section-header text-center mb-5">
               <h2 class="section-title">İletişim</h2>
-              <p class="section-subtitle">Benimle iletişime geçin</p>
+              <p class="section-subtitle">
+                Benimle iletişime geçin, birlikte harika projeler geliştirelim
+              </p>
             </div>
           </div>
         </div>
-        <!-- Contact content buraya gelecek -->
+
+        <!-- Contact Content -->
+        <div class="contact-content">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="contact-intro">
+              <h3>Hadi Konuşalım!</h3>
+              <p>
+                Yeni projeler, iş birliği fırsatları veya sadece merhaba demek
+                için benimle iletişime geçmekten çekinmeyin. Size en kısa sürede
+                geri dönüş yapacağım.
+              </p>
+            </div>
+
+            <div class="contact-info-cards">
+              <!-- Email -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>
+                    <a href="mailto:ismailumutluoglu@gmail.com"
+                      >ismailumutluoglu@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Telefon</h4>
+                  <p><a href="tel:+905551234567">+90 555 123 45 67</a></p>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Lokasyon</h4>
+                  <p>İstanbul, Türkiye</p>
+                </div>
+              </div>
+
+              <!-- Availability -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Müsaitlik</h4>
+                  <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="contact-social">
+              <h4>Sosyal Medya</h4>
+              <div class="social-links">
+                <a
+                  href="https://github.com/ismailumutluoglu"
+                  target="_blank"
+                  class="social-link github"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/ismailumutluoglu"
+                  target="_blank"
+                  class="social-link linkedin"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://twitter.com/ismailumutluoglu"
+                  target="_blank"
+                  class="social-link twitter"
+                  aria-label="Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://instagram.com/ismailumutluoglu"
+                  target="_blank"
+                  class="social-link instagram"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <div class="form-header">
+              <h3>Mesaj Gönder</h3>
+              <p>
+                Proje teklifleri, sorular veya iş birliği önerileriniz için
+                formu kullanabilirsiniz.
+              </p>
+            </div>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <!-- Name and Email Row -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName" class="form-label">Ad *</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="form-input"
+                    placeholder="Adınız"
+                    required
+                    autocomplete="given-name"
+                  />
+                  <div class="form-error">Ad alanı zorunludur.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="lastName" class="form-label">Soyad *</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    class="form-input"
+                    placeholder="Soyadınız"
+                    required
+                    autocomplete="family-name"
+                  />
+                  <div class="form-error">Soyad alanı zorunludur.</div>
+                </div>
+              </div>
+
+              <!-- Email and Phone Row -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="ornek@email.com"
+                    required
+                    autocomplete="email"
+                  />
+                  <div class="form-error">
+                    Geçerli bir email adresi giriniz.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" class="form-label">Telefon</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                    placeholder="+90 555 123 45 67"
+                    autocomplete="tel"
+                  />
+                  <div class="form-error">
+                    Geçerli bir telefon numarası giriniz.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group">
+                <label for="subject" class="form-label">Konu *</label>
+                <select id="subject" name="subject" class="form-input" required>
+                  <option value="">Konu seçiniz</option>
+                  <option value="freelance">Freelance Proje</option>
+                  <option value="fulltime">Tam Zamanlı İş Teklifi</option>
+                  <option value="collaboration">İş Birliği</option>
+                  <option value="consultation">Danışmanlık</option>
+                  <option value="question">Soru/Bilgi</option>
+                  <option value="other">Diğer</option>
+                </select>
+                <div class="form-error">Lütfen bir konu seçiniz.</div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="message" class="form-label">Mesaj *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input form-textarea"
+                  placeholder="Mesajınızı buraya yazın..."
+                  required
+                  rows="5"
+                ></textarea>
+                <div class="form-error">
+                  Mesaj alanı zorunludur (minimum 10 karakter).
+                </div>
+              </div>
+
+              <!-- Budget (Optional) -->
+              <div class="form-group">
+                <label for="budget" class="form-label"
+                  >Bütçe Aralığı (Opsiyonel)</label
+                >
+                <select id="budget" name="budget" class="form-input">
+                  <option value="">Bütçe aralığı seçiniz</option>
+                  <option value="under-5k">5.000 TL altı</option>
+                  <option value="5k-15k">5.000 - 15.000 TL</option>
+                  <option value="15k-30k">15.000 - 30.000 TL</option>
+                  <option value="30k-50k">30.000 - 50.000 TL</option>
+                  <option value="50k-plus">50.000 TL üzeri</option>
+                  <option value="discuss">Görüşülür</option>
+                </select>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="form-submit">
+                <span class="submit-text">
+                  <i class="fas fa-paper-plane me-2"></i>Mesaj Gönder
+                </span>
+                <div class="submit-spinner"></div>
+              </button>
+
+              <!-- Success Message -->
+              <div class="form-success">
+                <i class="fas fa-check-circle me-2"></i>
+                Mesajınız başarıyla gönderildi! En kısa sürede size geri dönüş
+                yapacağım.
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1085,5 +1332,6 @@
     <script src="js/app.js"></script>
     <script src="js/modules/experience-tabs.js"></script>
     <script src="js/modules/project-filter.js"></script>
+    <script src="js/modules/contact-animations.js"></script>
   </body>
 </html>
