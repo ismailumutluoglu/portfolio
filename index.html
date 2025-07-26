@@ -209,6 +209,52 @@
       </div>
     </nav>
 
+    <!-- CSS Animations -->
+    <style>
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 0.7;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 0.4;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0.7;
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hero-section * {
+        animation: fadeInUp 0.8s ease-out;
+      }
+
+      .hero-section *:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .hero-section *:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .hero-section *:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .hero-section *:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+    </style>
+
     <!-- Hero Section -->
     <section
       id="home"
@@ -216,357 +262,289 @@
       style="
         background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         min-height: 100vh;
-        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 8rem 0 3rem 0;
       "
     >
       <div class="container">
-        <div class="row align-items-center min-vh-100">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <div class="hero-content">
-              <div
-                style="
-                  display: inline-block;
-                  background: #e3f2fd;
-                  color: #1976d2;
-                  padding: 8px 16px;
-                  border-radius: 20px;
-                  font-size: 0.9rem;
-                  font-weight: 600;
-                  margin-bottom: 1.5rem;
-                "
-              >
-                👋 Merhaba! Hoş geldiniz
-              </div>
-
-              <h1
-                style="
-                  font-size: 3.2rem;
-                  font-weight: 700;
-                  line-height: 1.2;
-                  margin-bottom: 1rem;
-                  color: #2c3e50;
-                "
-              >
-                Ben <span style="color: #3498db">İsmail Umutluoğlu</span>
-              </h1>
-
-              <h2
-                style="
-                  font-size: 1.5rem;
-                  font-weight: 500;
-                  color: #5d6d7e;
-                  margin-bottom: 1.5rem;
-                "
-              >
-                Computer Engineer - Data Scientist
-              </h2>
-
-              <p
-                style="
-                  font-size: 1.1rem;
-                  line-height: 1.7;
-                  color: #566573;
-                  margin-bottom: 2.5rem;
-                  max-width: 500px;
-                "
-              >
-                Veri bilimi ve yapay zeka üzerine çalışıyorum. Bu alanda tutkulu
-                bir şekilde araştırmalar yapıyor, makine öğrenmesi ve derin
-                öğrenme projeleri geliştiriyorum.
-              </p>
-
-              <div
-                style="
-                  display: flex;
-                  flex-wrap: wrap;
-                  gap: 1rem;
-                  margin-bottom: 2.5rem;
-                "
-              >
-                <a
-                  href="#projects"
-                  style="
-                    background: #3498db;
-                    color: white;
-                    padding: 12px 24px;
-                    border-radius: 8px;
-                    text-decoration: none;
-                    font-weight: 600;
-                    display: inline-flex;
-                    align-items: center;
-                    transition: all 0.3s ease;
-                    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
-                  "
-                  onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(52, 152, 219, 0.4)'"
-                  onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(52, 152, 219, 0.3)'"
-                >
-                  <i class="fas fa-chart-line" style="margin-right: 8px"></i>
-                  Projelerimi Gör
-                </a>
-
-                <a
-                  href="#contact"
-                  style="
-                    background: transparent;
-                    color: #3498db;
-                    padding: 12px 24px;
-                    border-radius: 8px;
-                    text-decoration: none;
-                    font-weight: 600;
-                    display: inline-flex;
-                    align-items: center;
-                    border: 2px solid #3498db;
-                    transition: all 0.3s ease;
-                  "
-                  onmouseover="this.style.background='#3498db'; this.style.color='white'; this.style.transform='translateY(-2px)'"
-                  onmouseout="this.style.background='transparent'; this.style.color='#3498db'; this.style.transform='translateY(0)'"
-                >
-                  <i class="fas fa-envelope" style="margin-right: 8px"></i>
-                  İletişime Geç
-                </a>
-
-                <a
-                  href="assets/files/cv.pdf"
-                  target="_blank"
-                  download="İsmail_Umutluoğlu_CV.pdf"
-                  style="
-                    background: #27ae60;
-                    color: white;
-                    padding: 12px 24px;
-                    border-radius: 8px;
-                    text-decoration: none;
-                    font-weight: 600;
-                    display: inline-flex;
-                    align-items: center;
-                    transition: all 0.3s ease;
-                    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
-                  "
-                  onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(39, 174, 96, 0.4)'"
-                  onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(39, 174, 96, 0.3)'"
-                >
-                  <i class="fas fa-download" style="margin-right: 8px"></i>
-                  CV İndir
-                </a>
-              </div>
-
-              <div style="display: flex; gap: 1rem">
-                <a
-                  href="https://github.com/ismailumutluoglu"
-                  target="_blank"
-                  style="
-                    width: 45px;
-                    height: 45px;
-                    background: #f8f9fa;
-                    border: 2px solid #e9ecef;
-                    border-radius: 8px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: #2c3e50;
-                    font-size: 1.1rem;
-                    text-decoration: none;
-                    transition: all 0.3s ease;
-                  "
-                  onmouseover="this.style.background='#2c3e50'; this.style.color='white'; this.style.transform='translateY(-2px)'"
-                  onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-
-                <a
-                  href="https://linkedin.com/in/ismailumutluoglu"
-                  target="_blank"
-                  style="
-                    width: 45px;
-                    height: 45px;
-                    background: #f8f9fa;
-                    border: 2px solid #e9ecef;
-                    border-radius: 8px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: #2c3e50;
-                    font-size: 1.1rem;
-                    text-decoration: none;
-                    transition: all 0.3s ease;
-                  "
-                  onmouseover="this.style.background='#0077b5'; this.style.color='white'; this.style.transform='translateY(-2px)'"
-                  onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'"
-                >
-                  <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a
-                  href="mailto:ismail@example.com"
-                  style="
-                    width: 45px;
-                    height: 45px;
-                    background: #f8f9fa;
-                    border: 2px solid #e9ecef;
-                    border-radius: 8px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: #2c3e50;
-                    font-size: 1.1rem;
-                    text-decoration: none;
-                    transition: all 0.3s ease;
-                  "
-                  onmouseover="this.style.background='#ea4335'; this.style.color='white'; this.style.transform='translateY(-2px)'"
-                  onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'"
-                >
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div
-              class="hero-image"
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <!-- Name -->
+            <h1
               style="
+                font-size: 3.2rem;
+                font-weight: 700;
+                color: #2c3e50;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+              "
+            >
+              <span style="color: #3498db">İsmail Umutluoğlu</span>
+            </h1>
+
+            <!-- Title -->
+            <h2
+              style="
+                font-size: 1.4rem;
+                font-weight: 500;
+                color: #5d6d7e;
+                margin-bottom: 3rem;
+              "
+            >
+              Computer Engineer - Data Scientist
+            </h2>
+
+            <!-- Profile Photo -->
+            <div
+              style="
+                margin-bottom: 3rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 100%;
-                padding: 2rem 0;
               "
             >
-              <div
-                style="
-                  position: relative;
-                  width: 320px;
-                  height: 320px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                "
-              >
-                <!-- Decorative circles -->
+              <div style="position: relative; display: inline-block">
+                <!-- Decorative ring -->
                 <div
                   style="
                     position: absolute;
-                    width: 350px;
-                    height: 350px;
-                    border: 2px solid rgba(52, 152, 219, 0.1);
+                    top: -15px;
+                    left: -15px;
+                    right: -15px;
+                    bottom: -15px;
+                    border: 3px solid rgba(52, 152, 219, 0.2);
                     border-radius: 50%;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
+                    animation: pulse 2s infinite;
                   "
                 ></div>
 
-                <div
-                  style="
-                    position: absolute;
-                    width: 380px;
-                    height: 380px;
-                    border: 1px solid rgba(52, 152, 219, 0.05);
-                    border-radius: 50%;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                  "
-                ></div>
-
-                <!-- Main image container -->
-                <div
+                <img
+                  src="assets/images/profile/new.png"
+                  alt="İsmail Umutluoğlu"
                   style="
                     width: 280px;
                     height: 280px;
-                    background: white;
                     border-radius: 50%;
-                    padding: 12px;
-                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1),
-                      0 8px 16px rgba(52, 152, 219, 0.1);
-                    border: 3px solid #f8f9fa;
+                    object-fit: cover;
+                    border: 6px solid white;
+                    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15),
+                      0 5px 20px rgba(52, 152, 219, 0.1);
+                    transition: all 0.3s ease;
+                    display: block;
+                    margin: 0 auto;
                     position: relative;
-                    overflow: hidden;
+                    z-index: 2;
                   "
-                >
-                  <!-- Gradient border effect -->
-                  <div
-                    style="
-                      position: absolute;
-                      top: -3px;
-                      left: -3px;
-                      right: -3px;
-                      bottom: -3px;
-                      background: linear-gradient(
-                        45deg,
-                        #3498db,
-                        #2ecc71,
-                        #3498db
-                      );
-                      border-radius: 50%;
-                      z-index: -1;
-                      opacity: 0;
-                      transition: opacity 0.3s ease;
-                    "
-                    class="gradient-border"
-                  ></div>
-
-                  <img
-                    src="assets/images/profile/new.png"
-                    alt="İsmail Umutluoğlu"
-                    style="
-                      width: 100%;
-                      height: 100%;
-                      object-fit: cover;
-                      border-radius: 50%;
-                      transition: all 0.3s ease;
-                    "
-                    onmouseover="
-                    this.style.transform='scale(1.05)';
-                    this.parentElement.querySelector('.gradient-border').style.opacity='1';
-                  "
-                    onmouseout="
-                    this.style.transform='scale(1)';
-                    this.parentElement.querySelector('.gradient-border').style.opacity='0';
-                  "
-                  />
-                </div>
-
-                <!-- Floating dots -->
-                <div
-                  style="
-                    position: absolute;
-                    top: 20%;
-                    right: 10%;
-                    width: 12px;
-                    height: 12px;
-                    background: #3498db;
-                    border-radius: 50%;
-                    opacity: 0.7;
-                  "
-                ></div>
-
-                <div
-                  style="
-                    position: absolute;
-                    bottom: 25%;
-                    left: 15%;
-                    width: 8px;
-                    height: 8px;
-                    background: #2ecc71;
-                    border-radius: 50%;
-                    opacity: 0.6;
-                  "
-                ></div>
-
-                <div
-                  style="
-                    position: absolute;
-                    top: 30%;
-                    left: 5%;
-                    width: 6px;
-                    height: 6px;
-                    background: #e74c3c;
-                    border-radius: 50%;
-                    opacity: 0.5;
-                  "
-                ></div>
+                  onmouseover="this.style.transform='scale(1.08)'; this.style.boxShadow='0 20px 60px rgba(0, 0, 0, 0.2), 0 8px 25px rgba(52, 152, 219, 0.15)'"
+                  onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 15px 50px rgba(0, 0, 0, 0.15), 0 5px 20px rgba(52, 152, 219, 0.1)'"
+                />
               </div>
+            </div>
+
+            <!-- Greeting -->
+            <div
+              style="
+                background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+                color: #1976d2;
+                padding: 18px 36px;
+                border-radius: 30px;
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-bottom: 2.5rem;
+                display: inline-block;
+                box-shadow: 0 8px 25px rgba(25, 118, 210, 0.3);
+                border: 2px solid rgba(25, 118, 210, 0.2);
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+                transform: translateY(0);
+                transition: all 0.3s ease;
+              "
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 35px rgba(25, 118, 210, 0.4)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(25, 118, 210, 0.3)'"
+            >
+              👋 Merhaba! Hoş geldiniz
+            </div>
+
+            <!-- Description -->
+            <p
+              style="
+                font-size: 1.3rem;
+                line-height: 1.8;
+                color: #566573;
+                margin-bottom: 3.5rem;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: 400;
+              "
+            >
+              Veri bilimi ve yapay zeka üzerine çalışıyorum. Bu alanda tutkulu
+              bir şekilde araştırmalar yapıyor, makine öğrenmesi ve derin
+              öğrenme projeleri geliştiriyorum.
+            </p>
+
+            <!-- Buttons -->
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.2rem;
+                justify-content: center;
+                margin-bottom: 3.5rem;
+              "
+            >
+              <a
+                href="#projects"
+                style="
+                  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+                  color: white;
+                  padding: 15px 30px;
+                  border-radius: 10px;
+                  text-decoration: none;
+                  font-weight: 600;
+                  font-size: 1.05rem;
+                  display: inline-flex;
+                  align-items: center;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+                "
+                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 30px rgba(52, 152, 219, 0.4)'"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(52, 152, 219, 0.3)'"
+              >
+                <i
+                  class="fas fa-chart-line"
+                  style="margin-right: 10px; font-size: 1.1rem"
+                ></i>
+                Projelerimi Gör
+              </a>
+
+              <a
+                href="#contact"
+                style="
+                  background: transparent;
+                  color: #3498db;
+                  padding: 15px 30px;
+                  border-radius: 10px;
+                  text-decoration: none;
+                  font-weight: 600;
+                  font-size: 1.05rem;
+                  display: inline-flex;
+                  align-items: center;
+                  border: 2px solid #3498db;
+                  transition: all 0.3s ease;
+                "
+                onmouseover="this.style.background='linear-gradient(135deg, #3498db 0%, #2980b9 100%)'; this.style.color='white'; this.style.transform='translateY(-3px)'"
+                onmouseout="this.style.background='transparent'; this.style.color='#3498db'; this.style.transform='translateY(0)'"
+              >
+                <i
+                  class="fas fa-envelope"
+                  style="margin-right: 10px; font-size: 1.1rem"
+                ></i>
+                İletişime Geç
+              </a>
+
+              <a
+                href="assets/files/cv.pdf"
+                target="_blank"
+                download="İsmail_Umutluoğlu_CV.pdf"
+                style="
+                  background: linear-gradient(135deg, #27ae60 0%, #219a52 100%);
+                  color: white;
+                  padding: 15px 30px;
+                  border-radius: 10px;
+                  text-decoration: none;
+                  font-weight: 600;
+                  font-size: 1.05rem;
+                  display: inline-flex;
+                  align-items: center;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.3);
+                "
+                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 30px rgba(39, 174, 96, 0.4)'"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(39, 174, 96, 0.3)'"
+              >
+                <i
+                  class="fas fa-download"
+                  style="margin-right: 10px; font-size: 1.1rem"
+                ></i>
+                CV İndir
+              </a>
+            </div>
+
+            <!-- Social Media -->
+            <div style="display: flex; gap: 1.5rem; justify-content: center">
+              <a
+                href="https://github.com/ismailumutluoglu"
+                target="_blank"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  background: #f8f9fa;
+                  border: 2px solid #e9ecef;
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #2c3e50;
+                  font-size: 1.3rem;
+                  text-decoration: none;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                "
+                onmouseover="this.style.background='#2c3e50'; this.style.color='white'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(44, 62, 80, 0.3)'"
+                onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.1)'"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://linkedin.com/in/ismailumutluoglu"
+                target="_blank"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  background: #f8f9fa;
+                  border: 2px solid #e9ecef;
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #2c3e50;
+                  font-size: 1.3rem;
+                  text-decoration: none;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                "
+                onmouseover="this.style.background='#0077b5'; this.style.color='white'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(0, 119, 181, 0.3)'"
+                onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.1)'"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <a
+                href="mailto:ismail@example.com"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  background: #f8f9fa;
+                  border: 2px solid #e9ecef;
+                  border-radius: 12px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #2c3e50;
+                  font-size: 1.3rem;
+                  text-decoration: none;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                "
+                onmouseover="this.style.background='#ea4335'; this.style.color='white'; this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(234, 67, 53, 0.3)'"
+                onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.1)'"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -574,297 +552,283 @@
     </section>
 
     <!-- About Section -->
-    <!-- About Section -->
-    <section id="about" class="about-section py-5">
+    <section id="about" style="background: white; padding: 5rem 0">
       <div class="container">
-        <!-- Section Header -->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-header text-center mb-5">
-              <h2 class="section-title">Hakkımda</h2>
-              <p class="section-subtitle">
-                Kim olduğum, neler yaptığım ve hangi teknolojilerle çalıştığım
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <!-- Section Header -->
+            <div style="text-align: center; margin-bottom: 4rem">
+              <h2
+                style="
+                  font-size: 2.5rem;
+                  font-weight: 700;
+                  color: #2c3e50;
+                  margin-bottom: 1rem;
+                "
+              >
+                Hakkımda
+              </h2>
+              <p style="font-size: 1.1rem; color: #566573; margin-bottom: 0">
+                Kim olduğum ve hangi alanda çalıştığım
               </p>
             </div>
-          </div>
-        </div>
 
-        <!-- About Content -->
-        <div class="about-content">
-          <!-- About Text -->
-          <div class="about-text">
-            <div class="about-intro">
-              Merhaba! Ben İsmail Umutluoğlu, tutkulu bir Data Scientist'ım.
-            </div>
+            <!-- About Content -->
+            <div style="text-align: center">
+              <!-- Main Description -->
+              <p
+                style="
+                  font-size: 1.2rem;
+                  line-height: 1.8;
+                  color: #2c3e50;
+                  margin-bottom: 2rem;
+                  font-weight: 500;
+                "
+              >
+                Merhaba! Ben İsmail Umutluoğlu, tutkulu bir
+                <span style="color: #3498db; font-weight: 600"
+                  >Data Scientist</span
+                >'ım.
+              </p>
 
-            <!-- About Description -->
-            <div class="about-description">
-              <p>
+              <p
+                style="
+                  font-size: 1.1rem;
+                  line-height: 1.7;
+                  color: #566573;
+                  margin-bottom: 2rem;
+                  max-width: 700px;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
+              >
                 2019 yılından beri veri bilimi ve makine öğrenmesi alanında
                 çalışmaktayım. Python, R ve SQL kullanarak büyük veri setlerini
                 analiz ediyor, iş problemlerine yönelik akıllı çözümler
                 geliştiriyorum.
               </p>
 
-              <p>
+              <p
+                style="
+                  font-size: 1.1rem;
+                  line-height: 1.7;
+                  color: #566573;
+                  margin-bottom: 3rem;
+                  max-width: 700px;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
+              >
                 Makine öğrenmesi, derin öğrenme ve yapay zeka teknolojileri ile
                 tahmin modelleri, sınıflandırma algoritmaları ve veri
                 görselleştirme projeleri geliştiriyorum. Ayrıca cloud
                 platformları ve MLOps alanlarında da deneyim sahibiyim.
               </p>
-            </div>
 
-            <div class="about-highlight">
-              <p>
-                Kod yazmak benim için sadece bir meslek değil, aynı zamanda
-                tutkum. Her yeni proje, yeni bir öğrenme fırsatı ve
-                yaratıcılığımı sergileme şansı demek.
-              </p>
-            </div>
-          </div>
+              <!-- Skills Pills -->
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 0.8rem;
+                  justify-content: center;
+                  margin-bottom: 3rem;
+                "
+              >
+                <span
+                  style="
+                    background: #f8f9fa;
+                    color: #2c3e50;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    border: 1px solid #e9ecef;
+                  "
+                >
+                  Python
+                </span>
+                <span
+                  style="
+                    background: #f8f9fa;
+                    color: #2c3e50;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    border: 1px solid #e9ecef;
+                  "
+                >
+                  Machine Learning
+                </span>
+                <span
+                  style="
+                    background: #f8f9fa;
+                    color: #2c3e50;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    border: 1px solid #e9ecef;
+                  "
+                >
+                  Deep Learning
+                </span>
+                <span
+                  style="
+                    background: #f8f9fa;
+                    color: #2c3e50;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    border: 1px solid #e9ecef;
+                  "
+                >
+                  Data Visualization
+                </span>
+                <span
+                  style="
+                    background: #f8f9fa;
+                    color: #2c3e50;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    border: 1px solid #e9ecef;
+                  "
+                >
+                  Cloud Platforms
+                </span>
+                <span
+                  style="
+                    background: #f8f9fa;
+                    color: #2c3e50;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    border: 1px solid #e9ecef;
+                  "
+                >
+                  MLOps
+                </span>
+              </div>
 
-          <!-- About Features -->
-          <div class="about-features">
-            <div class="features-grid">
-              <!-- Feature 1: AI & ML -->
-              <div class="feature-card ai-card">
-                <div class="feature-icon">
-                  <i class="fas fa-brain"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>AI & Machine Learning</h4>
-                  <p>
-                    Yapay zeka ve makine öğrenmesi algoritmalarıyla gelecek
-                    tahminleri
+              <!-- Contact Info -->
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  gap: 3rem;
+                  margin-top: 3rem;
+                  background: #f8f9fa;
+                  padding: 3rem 2rem;
+                  border-radius: 12px;
+                  border: 1px solid #e9ecef;
+                  max-width: 800px;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
+              >
+                <div style="text-align: center">
+                  <div
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      background: #3498db;
+                      color: white;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 1.5rem auto;
+                      font-size: 1.4rem;
+                      box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+                    "
+                  >
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <h4
+                    style="
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      color: #2c3e50;
+                      margin-bottom: 0.8rem;
+                    "
+                  >
+                    Lokasyon
+                  </h4>
+                  <p style="font-size: 1rem; color: #566573; margin: 0; font-weight: 500;">
+                    İstanbul, Türkiye
                   </p>
-                  <div class="feature-badge">
-                    <i class="fas fa-star"></i> Uzman
-                  </div>
                 </div>
-              </div>
 
-              <!-- Feature 2: Data Visualization -->
-              <div class="feature-card viz-card">
-                <div class="feature-icon">
-                  <i class="fas fa-chart-pie"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Data Visualization</h4>
-                  <p>
-                    Karmaşık verileri anlaşılır ve etkileyici grafiklerle sunma
+                <div style="text-align: center">
+                  <div
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      background: #27ae60;
+                      color: white;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 1.5rem auto;
+                      font-size: 1.4rem;
+                      box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+                    "
+                  >
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <h4
+                    style="
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      color: #2c3e50;
+                      margin-bottom: 0.8rem;
+                    "
+                  >
+                    Eğitim
+                  </h4>
+                  <p style="font-size: 1rem; color: #566573; margin: 0; font-weight: 500;">
+                    Bilgisayar Mühendisliği
                   </p>
-                  <div class="feature-badge">
-                    <i class="fas fa-palette"></i> Yaratıcı
-                  </div>
                 </div>
-              </div>
 
-              <!-- Feature 3: Cloud Computing -->
-              <div class="feature-card cloud-card">
-                <div class="feature-icon">
-                  <i class="fas fa-cloud"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Cloud Computing</h4>
-                  <p>
-                    AWS, GCP ve Azure platformlarında ölçeklenebilir çözümler
+                <div style="text-align: center">
+                  <div
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      background: #e74c3c;
+                      color: white;
+                      border-radius: 50%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 1.5rem auto;
+                      font-size: 1.4rem;
+                      box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+                    "
+                  >
+                    <i class="fas fa-language"></i>
+                  </div>
+                  <h4
+                    style="
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      color: #2c3e50;
+                      margin-bottom: 0.8rem;
+                    "
+                  >
+                    Diller
+                  </h4>
+                  <p style="font-size: 1rem; color: #566573; margin: 0; font-weight: 500;">
+                    Türkçe, İngilizce
                   </p>
-                  <div class="feature-badge">
-                    <i class="fas fa-rocket"></i> Hızlı
-                  </div>
                 </div>
-              </div>
-
-              <!-- Feature 4: Problem Solving -->
-              <div class="feature-card problem-card">
-                <div class="feature-icon">
-                  <i class="fas fa-lightbulb"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Problem Solving</h4>
-                  <p>Karmaşık iş problemlerini analitik düşünceyle çözme</p>
-                  <div class="feature-badge">
-                    <i class="fas fa-puzzle-piece"></i> Analitik
-                  </div>
-                </div>
-              </div>
-
-              <!-- Feature 5: Team Leadership -->
-              <div class="feature-card team-card">
-                <div class="feature-icon">
-                  <i class="fas fa-users"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Team Leadership</h4>
-                  <p>Junior geliştiricilere mentorluk ve takım yönetimi</p>
-                  <div class="feature-badge">
-                    <i class="fas fa-crown"></i> Lider
-                  </div>
-                </div>
-              </div>
-
-              <!-- Feature 6: Continuous Learning -->
-              <div class="feature-card learning-card">
-                <div class="feature-icon">
-                  <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Sürekli Öğrenme</h4>
-                  <p>Teknoloji trendlerini takip etme ve kendini geliştirme</p>
-                  <div class="feature-badge">
-                    <i class="fas fa-infinity"></i> Sürekli
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills Section -->
-        <div class="skills-section">
-          <div class="skills-intro">
-            <h3>Teknik Yeteneklerim</h3>
-            <p>Çalıştığım teknolojiler ve uzmanlık alanlarım</p>
-          </div>
-
-          <div class="skills-grid">
-            <!-- Data Science & ML Skills -->
-            <div class="skill-category">
-              <div class="skill-category-title">
-                <div class="skill-category-icon">
-                  <i class="fas fa-brain"></i>
-                </div>
-                Machine Learning & AI
-              </div>
-              <div class="skills-list">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">R</span>
-                <span class="skill-tag">TensorFlow</span>
-                <span class="skill-tag">PyTorch</span>
-                <span class="skill-tag">Scikit-learn</span>
-                <span class="skill-tag">Keras</span>
-                <span class="skill-tag">XGBoost</span>
-                <span class="skill-tag">LightGBM</span>
-                <span class="skill-tag">OpenCV</span>
-                <span class="skill-tag">NLTK</span>
-                <span class="skill-tag">Spacy</span>
-                <span class="skill-tag">Hugging Face</span>
-              </div>
-            </div>
-
-            <!-- Data Analysis Skills -->
-            <div class="skill-category">
-              <div class="skill-category-title">
-                <div class="skill-category-icon">
-                  <i class="fas fa-chart-line"></i>
-                </div>
-                Data Analysis & Visualization
-              </div>
-              <div class="skills-list">
-                <span class="skill-tag">Pandas</span>
-                <span class="skill-tag">NumPy</span>
-                <span class="skill-tag">Matplotlib</span>
-                <span class="skill-tag">Seaborn</span>
-                <span class="skill-tag">Plotly</span>
-                <span class="skill-tag">Tableau</span>
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">Apache Spark</span>
-                <span class="skill-tag">Jupyter</span>
-                <span class="skill-tag">Google Colab</span>
-                <span class="skill-tag">Statistical Analysis</span>
-                <span class="skill-tag">A/B Testing</span>
-              </div>
-            </div>
-
-            <!-- Database & Cloud Skills -->
-            <div class="skill-category">
-              <div class="skill-category-title">
-                <div class="skill-category-icon">
-                  <i class="fas fa-database"></i>
-                </div>
-                Database & Cloud Platforms
-              </div>
-              <div class="skills-list">
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">PostgreSQL</span>
-                <span class="skill-tag">MySQL</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">AWS</span>
-                <span class="skill-tag">Google Cloud Platform</span>
-                <span class="skill-tag">Azure</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">Kubernetes</span>
-                <span class="skill-tag">Apache Airflow</span>
-                <span class="skill-tag">MLflow</span>
-              </div>
-            </div>
-
-            <!-- Tools & Programming -->
-            <div class="skill-category">
-              <div class="skill-category-title">
-                <div class="skill-category-icon">
-                  <i class="fas fa-tools"></i>
-                </div>
-                Tools & Programming
-              </div>
-              <div class="skills-list">
-                <span class="skill-tag">Git & GitHub</span>
-                <span class="skill-tag">VS Code</span>
-                <span class="skill-tag">PyCharm</span>
-                <span class="skill-tag">RStudio</span>
-                <span class="skill-tag">Anaconda</span>
-                <span class="skill-tag">REST APIs</span>
-                <span class="skill-tag">FastAPI</span>
-                <span class="skill-tag">Flask</span>
-                <span class="skill-tag">Linux</span>
-                <span class="skill-tag">Excel</span>
-                <span class="skill-tag">Agile/Scrum</span>
-                <span class="skill-tag">CI/CD</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Personal Info -->
-        <div class="personal-info">
-          <div class="info-grid">
-            <div class="info-item">
-              <div class="info-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="info-content">
-                <h4>Lokasyon</h4>
-                <p>İstanbul, Türkiye</p>
-              </div>
-            </div>
-
-            <div class="info-item">
-              <div class="info-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="info-content">
-                <h4>Email</h4>
-                <p>ismailumutluoglu10@gmail.com</p>
-              </div>
-            </div>
-
-            <div class="info-item">
-              <div class="info-icon">
-                <i class="fas fa-graduation-cap"></i>
-              </div>
-              <div class="info-content">
-                <h4>Eğitim</h4>
-                <p>Bilgisayar Mühendisliği</p>
-              </div>
-            </div>
-
-            <div class="info-item">
-              <div class="info-icon">
-                <i class="fas fa-language"></i>
-              </div>
-              <div class="info-content">
-                <h4>Diller</h4>
-                <p>Türkçe Ana Dil , İngilizce B2</p>
               </div>
             </div>
           </div>
