@@ -307,20 +307,6 @@
               "
             >
               <div style="position: relative; display: inline-block">
-                <!-- Decorative ring -->
-                <div
-                  style="
-                    position: absolute;
-                    top: -15px;
-                    left: -15px;
-                    right: -15px;
-                    bottom: -15px;
-                    border: 3px solid rgba(52, 152, 219, 0.2);
-                    border-radius: 50%;
-                    animation: pulse 2s infinite;
-                  "
-                ></div>
-
                 <img
                   src="assets/images/profile/new.png"
                   alt="İsmail Umutluoğlu"
@@ -759,7 +745,14 @@
                   >
                     Lokasyon
                   </h4>
-                  <p style="font-size: 1rem; color: #566573; margin: 0; font-weight: 500;">
+                  <p
+                    style="
+                      font-size: 1rem;
+                      color: #566573;
+                      margin: 0;
+                      font-weight: 500;
+                    "
+                  >
                     İstanbul, Türkiye
                   </p>
                 </div>
@@ -792,7 +785,14 @@
                   >
                     Eğitim
                   </h4>
-                  <p style="font-size: 1rem; color: #566573; margin: 0; font-weight: 500;">
+                  <p
+                    style="
+                      font-size: 1rem;
+                      color: #566573;
+                      margin: 0;
+                      font-weight: 500;
+                    "
+                  >
                     Bilgisayar Mühendisliği
                   </p>
                 </div>
@@ -825,7 +825,14 @@
                   >
                     Diller
                   </h4>
-                  <p style="font-size: 1rem; color: #566573; margin: 0; font-weight: 500;">
+                  <p
+                    style="
+                      font-size: 1rem;
+                      color: #566573;
+                      margin: 0;
+                      font-weight: 500;
+                    "
+                  >
                     Türkçe, İngilizce
                   </p>
                 </div>
@@ -1359,213 +1366,62 @@
           <button class="filter-btn active" data-filter="all">
             <i class="fas fa-layer-group me-1"></i>Tümü
           </button>
+          <button class="filter-btn" data-filter="ai">
+            <i class="fas fa-brain me-1"></i>Yapay Zeka
+          </button>
+          <button class="filter-btn" data-filter="data">
+            <i class="fas fa-chart-bar me-1"></i>Veri Bilimi
+          </button>
           <button class="filter-btn" data-filter="web">
-            <i class="fas fa-globe me-1"></i>Web Apps
+            <i class="fas fa-globe me-1"></i>Web Geliştirme
           </button>
-          <button class="filter-btn" data-filter="mobile">
-            <i class="fas fa-mobile-alt me-1"></i>Mobile
-          </button>
-          <button class="filter-btn" data-filter="fullstack">
-            <i class="fas fa-code me-1"></i>Full Stack
-          </button>
-          <button class="filter-btn" data-filter="ui">
-            <i class="fas fa-paint-brush me-1"></i>UI/UX
+          <button class="filter-btn" data-filter="ml">
+            <i class="fas fa-robot me-1"></i>Makine Öğrenmesi
           </button>
         </div>
 
         <!-- Projects Grid -->
         <div class="projects-grid">
-          <!-- Project 1: E-Commerce Platform -->
-          <div class="project-card" data-category="fullstack web">
+          <!-- Project 1: Müşteri Segmentasyonu ML Projesi -->
+          <div class="project-card" data-category="ml data">
             <div class="project-image">
               <div class="project-image-placeholder">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-users"></i>
               </div>
               <div class="project-status completed">Tamamlandı</div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">E-Commerce Platform</h3>
+              <h3 class="project-title">Müşteri Segmentasyonu ML Projesi</h3>
               <p class="project-description">
-                Modern e-ticaret platformu. Kullanıcı yönetimi, ürün kataloğu,
-                sepet sistemi, ödeme entegrasyonu ve admin paneli içeren
-                full-stack uygulama.
+                K-Means clustering algoritması kullanarak e-ticaret
+                müşterilerinin satın alma davranışlarına göre segmentasyonu. RFM
+                analizi ve müşteri yaşam döngüsü değeri hesaplama.
               </p>
               <div class="project-technologies">
-                <span class="tech-tag react">React.js</span>
-                <span class="tech-tag node">Node.js</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Stripe API</span>
-                <span class="tech-tag">JWT</span>
-                <span class="tech-tag">Redux</span>
+                <span class="tech-tag python">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Seaborn</span>
+                <span class="tech-tag">Jupyter</span>
               </div>
               <div class="project-actions">
                 <a
-                  href="https://github.com/ismailumutluoglu/ecommerce-platform"
+                  href="https://github.com/ismailumutluoglu/customer-segmentation"
                   target="_blank"
                   class="project-btn project-btn-primary"
                 >
                   <i class="fab fa-github"></i>GitHub
                 </a>
                 <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-external-link-alt"></i>Demo
+                  <i class="fas fa-chart-line"></i>Demo
                 </a>
-              </div>
-              <div class="project-stats">
-                <div class="project-date">
-                  <i class="fas fa-calendar-alt"></i>
-                  Mart 2024
-                </div>
-                <div class="project-views">
-                  <i class="fas fa-eye"></i>
-                  1.2k görüntüleme
-                </div>
               </div>
             </div>
           </div>
 
-          <!-- Project 2: Task Management App -->
-          <div class="project-card" data-category="web fullstack">
-            <div class="project-image">
-              <div class="project-image-placeholder">
-                <i class="fas fa-tasks"></i>
-              </div>
-              <div class="project-status completed">Tamamlandı</div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Task Management System</h3>
-              <p class="project-description">
-                Takım çalışması için geliştirilmiş proje yönetim uygulaması.
-                Kanban board, zaman takibi, dosya paylaşımı ve real-time
-                bildirimler.
-              </p>
-              <div class="project-technologies">
-                <span class="tech-tag vue">Vue.js</span>
-                <span class="tech-tag">Laravel</span>
-                <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">Socket.io</span>
-                <span class="tech-tag">Vuex</span>
-                <span class="tech-tag">PHP</span>
-              </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/ismailumutluoglu/task-management"
-                  target="_blank"
-                  class="project-btn project-btn-primary"
-                >
-                  <i class="fab fa-github"></i>GitHub
-                </a>
-                <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-external-link-alt"></i>Demo
-                </a>
-              </div>
-              <div class="project-stats">
-                <div class="project-date">
-                  <i class="fas fa-calendar-alt"></i>
-                  Ocak 2024
-                </div>
-                <div class="project-views">
-                  <i class="fas fa-eye"></i>
-                  892 görüntüleme
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: Weather App -->
-          <div class="project-card" data-category="mobile web">
-            <div class="project-image">
-              <div class="project-image-placeholder">
-                <i class="fas fa-cloud-sun"></i>
-              </div>
-              <div class="project-status completed">Tamamlandı</div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Weather Forecast App</h3>
-              <p class="project-description">
-                Progressive Web App (PWA) olarak geliştirilmiş hava durumu
-                uygulaması. Konum bazlı tahmin, offline çalışma ve push
-                notification desteği.
-              </p>
-              <div class="project-technologies">
-                <span class="tech-tag javascript">JavaScript</span>
-                <span class="tech-tag">PWA</span>
-                <span class="tech-tag">Service Worker</span>
-                <span class="tech-tag">OpenWeather API</span>
-                <span class="tech-tag">Geolocation</span>
-              </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/ismailumutluoglu/weather-app"
-                  target="_blank"
-                  class="project-btn project-btn-primary"
-                >
-                  <i class="fab fa-github"></i>GitHub
-                </a>
-                <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-external-link-alt"></i>Demo
-                </a>
-              </div>
-              <div class="project-stats">
-                <div class="project-date">
-                  <i class="fas fa-calendar-alt"></i>
-                  Kasım 2023
-                </div>
-                <div class="project-views">
-                  <i class="fas fa-eye"></i>
-                  654 görüntüleme
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4: Portfolio Website -->
-          <div class="project-card" data-category="web ui">
-            <div class="project-image">
-              <div class="project-image-placeholder">
-                <i class="fas fa-user-circle"></i>
-              </div>
-              <div class="project-status in-progress">Devam Ediyor</div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Personal Portfolio</h3>
-              <p class="project-description">
-                Modern ve responsive kişisel portfolio web sitesi. Dark/light
-                theme, animasyonlar ve modüler CSS yapısı ile geliştirildi.
-              </p>
-              <div class="project-technologies">
-                <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">CSS3</span>
-                <span class="tech-tag javascript">JavaScript</span>
-                <span class="tech-tag">Bootstrap</span>
-                <span class="tech-tag">Font Awesome</span>
-              </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/ismailumutluoglu/portfolio"
-                  target="_blank"
-                  class="project-btn project-btn-primary"
-                >
-                  <i class="fab fa-github"></i>GitHub
-                </a>
-                <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-external-link-alt"></i>Demo
-                </a>
-              </div>
-              <div class="project-stats">
-                <div class="project-date">
-                  <i class="fas fa-calendar-alt"></i>
-                  Temmuz 2025
-                </div>
-                <div class="project-views">
-                  <i class="fas fa-eye"></i>
-                  2.1k görüntüleme
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 5: Chat Application -->
-          <div class="project-card" data-category="fullstack web">
+          <!-- Project 2: Duygu Analizi NLP Projesi -->
+          <div class="project-card" data-category="ai ml">
             <div class="project-image">
               <div class="project-image-placeholder">
                 <i class="fas fa-comments"></i>
@@ -1573,23 +1429,23 @@
               <div class="project-status completed">Tamamlandı</div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">Real-time Chat App</h3>
+              <h3 class="project-title">Türkçe Duygu Analizi NLP</h3>
               <p class="project-description">
-                Socket.io kullanarak geliştirilmiş gerçek zamanlı sohbet
-                uygulaması. Grup sohbetleri, dosya paylaşımı ve message
-                encryption özellikleri.
+                BERT tabanlı transformer modeli ile Türkçe metinlerde duygu
+                analizi. Twitter verilerinde pozitif/negatif duygu
+                sınıflandırması ve gerçek zamanlı analiz dashboard'u.
               </p>
               <div class="project-technologies">
-                <span class="tech-tag react">React.js</span>
-                <span class="tech-tag node">Node.js</span>
-                <span class="tech-tag">Socket.io</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">JWT</span>
-                <span class="tech-tag">Encryption</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Transformers</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">BERT</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">Streamlit</span>
               </div>
               <div class="project-actions">
                 <a
-                  href="https://github.com/ismailumutluoglu/chat-app"
+                  href="https://github.com/ismailumutluoglu/turkish-sentiment-analysis"
                   target="_blank"
                   class="project-btn project-btn-primary"
                 >
@@ -1599,21 +1455,11 @@
                   <i class="fas fa-external-link-alt"></i>Demo
                 </a>
               </div>
-              <div class="project-stats">
-                <div class="project-date">
-                  <i class="fas fa-calendar-alt"></i>
-                  Eylül 2023
-                </div>
-                <div class="project-views">
-                  <i class="fas fa-eye"></i>
-                  1.5k görüntüleme
-                </div>
-              </div>
             </div>
           </div>
 
-          <!-- Project 6: Dashboard Template -->
-          <div class="project-card" data-category="ui web">
+          <!-- Project 3: Hisse Senedi Tahmin Modeli -->
+          <div class="project-card" data-category="ai data">
             <div class="project-image">
               <div class="project-image-placeholder">
                 <i class="fas fa-chart-line"></i>
@@ -1621,39 +1467,144 @@
               <div class="project-status completed">Tamamlandı</div>
             </div>
             <div class="project-content">
-              <h3 class="project-title">Admin Dashboard</h3>
+              <h3 class="project-title">Hisse Senedi Fiyat Tahmin Modeli</h3>
               <p class="project-description">
-                Modern admin dashboard template. Charts, tables, form components
-                ve responsive tasarım ile kullanıma hazır şablon.
+                LSTM derin öğrenme modeli ile BIST 100 hisse senetlerinin fiyat
+                tahmini. Teknik indikatörler ve makroekonomik verilerle hibrit
+                model geliştirme.
               </p>
               <div class="project-technologies">
-                <span class="tech-tag angular">Angular</span>
-                <span class="tech-tag typescript">TypeScript</span>
-                <span class="tech-tag">Chart.js</span>
-                <span class="tech-tag">Angular Material</span>
-                <span class="tech-tag">RxJS</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Keras</span>
+                <span class="tech-tag">LSTM</span>
+                <span class="tech-tag">Alpha Vantage API</span>
+                <span class="tech-tag">Plotly</span>
               </div>
               <div class="project-actions">
                 <a
-                  href="https://github.com/ismailumutluoglu/admin-dashboard"
+                  href="https://github.com/ismailumutluoglu/stock-price-prediction"
                   target="_blank"
                   class="project-btn project-btn-primary"
                 >
                   <i class="fab fa-github"></i>GitHub
                 </a>
                 <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-external-link-alt"></i>Demo
+                  <i class="fas fa-chart-area"></i>Analiz
                 </a>
               </div>
-              <div class="project-stats">
-                <div class="project-date">
-                  <i class="fas fa-calendar-alt"></i>
-                  Haziran 2023
-                </div>
-                <div class="project-views">
-                  <i class="fas fa-eye"></i>
-                  3.2k görüntüleme
-                </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Görüntü Sınıflandırma CNN -->
+          <div class="project-card" data-category="ai data">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <i class="fas fa-images"></i>
+              </div>
+              <div class="project-status in-progress">Devam Ediyor</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Tıbbi Görüntü Sınıflandırma CNN</h3>
+              <p class="project-description">
+                Konvolüsyonel Sinir Ağları ile röntgen görüntülerinden hastalık
+                teşhisi. Transfer learning ve data augmentation teknikleriyle
+                %94 doğruluk oranı.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">CNN</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Transfer Learning</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ismailumutluoglu/medical-image-classification"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                >
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+                <a href="#" class="project-btn project-btn-secondary">
+                  <i class="fas fa-brain"></i>Model
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Web Scraping ve Analiz -->
+          <div class="project-card" data-category="data web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <i class="fas fa-spider"></i>
+              </div>
+              <div class="project-status completed">Tamamlandı</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Ticaret Veri Kazıma ve Analizi</h3>
+              <p class="project-description">
+                Selenium ve BeautifulSoup ile e-ticaret sitelerinden veri
+                kazıma. Fiyat analizi, trend takibi ve otomatik raporlama
+                sistemi.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Selenium</span>
+                <span class="tech-tag">BeautifulSoup</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Streamlit</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ismailumutluoglu/ecommerce-scraper"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                >
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+                <a href="#" class="project-btn project-btn-secondary">
+                  <i class="fas fa-chart-bar"></i>Dashboard
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Veri Görselleştirme Dashboard -->
+          <div class="project-card" data-category="data web">
+            <div class="project-image">
+              <div class="project-image-placeholder">
+                <i class="fas fa-chart-pie"></i>
+              </div>
+              <div class="project-status completed">Tamamlandı</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">İnteraktif Veri Analiz Dashboard</h3>
+              <p class="project-description">
+                COVID-19 verilerini analiz eden interaktif dashboard. Real-time
+                güncellemeler, dinamik grafikler ve filtreleme özellikleri.
+              </p>
+              <div class="project-technologies">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Dash</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/ismailumutluoglu/covid-dashboard"
+                  target="_blank"
+                  class="project-btn project-btn-primary"
+                >
+                  <i class="fab fa-github"></i>GitHub
+                </a>
+                <a href="#" class="project-btn project-btn-secondary">
+                  <i class="fas fa-external-link-alt"></i>Dashboard
+                </a>
               </div>
             </div>
           </div>
