@@ -1,17 +1,17 @@
 /* ===== CSS CUSTOM PROPERTIES (VARIABLES) ===== */
 :root {
   /* === COLORS === */
-  /* Primary Colors */
-  --primary-50: #eff6ff;
-  --primary-100: #dbeafe;
-  --primary-200: #bfdbfe;
-  --primary-300: #93c5fd;
-  --primary-400: #60a5fa;
-  --primary-500: #3b82f6;  /* Ana mavi */
-  --primary-600: #2563eb;
-  --primary-700: #1d4ed8;
-  --primary-800: #1e40af;
-  --primary-900: #1e3a8a;
+  /* Primary Colors - Professional Dark Gray/Charcoal */
+  --primary-50: #f8fafc;
+  --primary-100: #f1f5f9;
+  --primary-200: #e2e8f0;
+  --primary-300: #cbd5e1;
+  --primary-400: #94a3b8;
+  --primary-500: #64748b;  /* Ana gri */
+  --primary-600: #475569;
+  --primary-700: #334155;
+  --primary-800: #1e293b;
+  --primary-900: #0f172a;
 
   /* Gray Colors */
   --gray-50: #f9fafb;
@@ -25,11 +25,23 @@
   --gray-800: #1f2937;
   --gray-900: #111827;
 
+  /* Accent Colors - Sophisticated Teal/Blue */
+  --accent-50: #f0f9ff;
+  --accent-100: #e0f2fe;
+  --accent-200: #bae6fd;
+  --accent-300: #7dd3fc;
+  --accent-400: #38bdf8;
+  --accent-500: #0ea5e9;  /* Ana mavi */
+  --accent-600: #0284c7;
+  --accent-700: #0369a1;
+  --accent-800: #075985;
+  --accent-900: #0c4a6e;
+
   /* Semantic Colors */
   --success: #10b981;
-  --warning: #f59e0b;
+  --warning: var(--accent-500);
   --error: #ef4444;
-  --info: #3b82f6;
+  --info: var(--primary-600);
 
   /* === LIGHT THEME === */
   --bg-primary: #ffffff;
@@ -119,7 +131,8 @@
   --bp-xxl: 1400px;
 }
 
-/* === DARK THEME === */
+/* === DARK THEME (DISABLED) === */
+/*
 [data-theme="dark"] {
   --bg-primary: var(--gray-900);
   --bg-secondary: var(--gray-800);
@@ -137,8 +150,10 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.4);
 }
+*/
 
-/* === SYSTEM PREFERENCE === */
+/* === SYSTEM PREFERENCE (DISABLED) === */
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-primary: var(--gray-900);
@@ -153,3 +168,4 @@
     --border-color-hover: var(--gray-600);
   }
 }
+*/

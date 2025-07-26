@@ -324,15 +324,15 @@
 }
 
 .project-btn-primary {
-  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  background: linear-gradient(135deg, var(--accent-600), var(--accent-500));
   color: white;
-  border: 2px solid var(--primary-600);
+  border: 2px solid var(--accent-600);
 }
 
 .project-btn-primary:hover {
-  background: linear-gradient(135deg, var(--primary-700), var(--primary-600));
+  background: linear-gradient(135deg, var(--accent-700), var(--accent-600));
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
   color: white;
 }
 
