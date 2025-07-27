@@ -6,11 +6,11 @@
 
     <!-- SEO Meta Tags -->
     <title>
-      İsmail Umutluoğlu | Portfolio Computer Engineer - Data Scientist - Full
-      Stack Developer
+      İsmail Umutluoğlu | Portfolio Website
     </title>
     <meta
       name="description"
+      .
       content="İsmail Umut Luoğlu - Deneyimli Full Stack Developer. React, Vue.js, Node.js, Python ile modern web uygulamaları geliştiriyorum. İstanbul merkezli freelance developer."
     />
     <meta
@@ -253,6 +253,218 @@
       .hero-section *:nth-child(4) {
         animation-delay: 0.4s;
       }
+
+      /* Skills Section Styles */
+      .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .skill-category-card {
+        background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 20px;
+        padding: 2.5rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .skill-category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .skill-category-card.full-width {
+        grid-column: 1 / -1;
+      }
+
+      .skill-category-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .skill-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 1rem;
+      }
+
+      .skill-icon.data-science {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      .skill-icon.web-dev {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      }
+
+      .skill-icon.tools {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      }
+
+      .skill-category-header h3 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+      }
+
+      .skill-category-header p {
+        color: #7f8c8d;
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .skill-subcategory {
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        text-align: center;
+      }
+
+      .skill-subcategory h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      .skill-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+      }
+
+      .skill-item {
+        background: #f8f9fa;
+        color: #2c3e50;
+        padding: 0.4rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        border: 1px solid #e9ecef;
+        transition: all 0.3s ease;
+      }
+
+      .skill-item:hover {
+        background: #3498db;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+      }
+
+      .skill-item.expert {
+        background: #e8f5e8;
+        color: #27ae60;
+        border-color: #27ae60;
+      }
+
+      .skill-item.expert:hover {
+        background: #27ae60;
+        color: white;
+      }
+
+      .skill-item.advanced {
+        background: #e3f2fd;
+        color: #1976d2;
+        border-color: #1976d2;
+      }
+
+      .skill-item.advanced:hover {
+        background: #1976d2;
+        color: white;
+      }
+
+      .skill-item.intermediate {
+        background: #fff3e0;
+        color: #f57c00;
+        border-color: #f57c00;
+      }
+
+      .skill-item.intermediate:hover {
+        background: #f57c00;
+        color: white;
+      }
+
+      .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .tool-category {
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .tool-category h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .tool-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+      }
+
+      .tool-item {
+        background: #f8f9fa;
+        color: #2c3e50;
+        padding: 0.3rem 0.6rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border: 1px solid #e9ecef;
+        transition: all 0.3s ease;
+      }
+
+      .tool-item:hover {
+        background: #3498db;
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .skills-container {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        
+        .tools-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
 
     <!-- Hero Section -->
@@ -276,13 +488,15 @@
             <h1
               style="
                 font-size: 3.2rem;
-                font-weight: 700;
+                font-weight: 900;
                 color: #2c3e50;
                 margin-bottom: 1rem;
                 line-height: 1.2;
               "
             >
-              <span style="color: #3498db">İsmail Umutluoğlu</span>
+              <span style="color: #000000; font-weight: 900"
+                >İsmail Umutluoğlu</span
+              >
             </h1>
 
             <!-- Title -->
@@ -328,29 +542,6 @@
                   onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 15px 50px rgba(0, 0, 0, 0.15), 0 5px 20px rgba(52, 152, 219, 0.1)'"
                 />
               </div>
-            </div>
-
-            <!-- Greeting -->
-            <div
-              style="
-                background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-                color: #1976d2;
-                padding: 18px 36px;
-                border-radius: 30px;
-                font-size: 1.4rem;
-                font-weight: 700;
-                margin-bottom: 2.5rem;
-                display: inline-block;
-                box-shadow: 0 8px 25px rgba(25, 118, 210, 0.3);
-                border: 2px solid rgba(25, 118, 210, 0.2);
-                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-                transform: translateY(0);
-                transition: all 0.3s ease;
-              "
-              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 35px rgba(25, 118, 210, 0.4)'"
-              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(25, 118, 210, 0.3)'"
-            >
-              👋 Merhaba! Hoş geldiniz
             </div>
 
             <!-- Description -->
@@ -432,7 +623,7 @@
               </a>
 
               <a
-                href="assets/files/cv.pdf"
+                href="assets/images/profile/CV.pdf"
                 target="_blank"
                 download="İsmail_Umutluoğlu_CV.pdf"
                 style="
@@ -486,7 +677,7 @@
               </a>
 
               <a
-                href="https://linkedin.com/in/ismailumutluoglu"
+                href="https://www.linkedin.com/in/ismail-umutluoglu-a82955262"
                 target="_blank"
                 style="
                   width: 55px;
@@ -510,7 +701,7 @@
               </a>
 
               <a
-                href="mailto:ismail@example.com"
+                href="mailto:ismailumutluoglu10@gmail.com"
                 style="
                   width: 55px;
                   height: 55px;
@@ -538,306 +729,478 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" style="background: white; padding: 5rem 0">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <!-- Section Header -->
+    <section
+      id="about"
+      style="
+        background: #ffffff;
+        padding: 5rem 0;
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <!-- Background Pattern -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: radial-gradient(
+              circle at 20% 50%,
+              rgba(52, 152, 219, 0.03) 0%,
+              transparent 50%
+            ),
+            radial-gradient(
+              circle at 80% 20%,
+              rgba(155, 89, 182, 0.03) 0%,
+              transparent 50%
+            );
+          z-index: 1;
+        "
+      ></div>
+
+      <div class="container" style="position: relative; z-index: 2">
+        <!-- Simple Title -->
+        <div class="row">
+          <div class="col-12">
             <div style="text-align: center; margin-bottom: 4rem">
               <h2
                 style="
-                  font-size: 2.5rem;
-                  font-weight: 700;
+                  font-size: 2.8rem;
+                  font-weight: 300;
                   color: #2c3e50;
-                  margin-bottom: 1rem;
+                  margin: 0;
+                  letter-spacing: -0.02em;
                 "
               >
                 Hakkımda
               </h2>
-              <p style="font-size: 1.1rem; color: #566573; margin-bottom: 0">
-                Kim olduğum ve hangi alanda çalıştığım
-              </p>
             </div>
+          </div>
+        </div>
 
-            <!-- About Content -->
-            <div style="text-align: center">
-              <!-- Main Description -->
+        <!-- Main Content -->
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <!-- Personal Introduction Card -->
+            <div
+              style="
+                background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+                border-radius: 20px;
+                padding: 3rem;
+                margin-bottom: 3rem;
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                text-align: center;
+              "
+            >
+              <h3
+                style="
+                  font-size: 2.2rem;
+                  font-weight: 400;
+                  color: #2c3e50;
+                  margin-bottom: 0.8rem;
+                "
+              >
+                İsmail Umutluoğlu
+              </h3>
+
               <p
                 style="
                   font-size: 1.2rem;
-                  line-height: 1.8;
-                  color: #2c3e50;
-                  margin-bottom: 2rem;
+                  color: #3498db;
                   font-weight: 500;
-                "
-              >
-                Merhaba! Ben İsmail Umutluoğlu, tutkulu bir
-                <span style="color: #3498db; font-weight: 600"
-                  >Data Scientist</span
-                >'ım.
-              </p>
-
-              <p
-                style="
-                  font-size: 1.1rem;
-                  line-height: 1.7;
-                  color: #566573;
                   margin-bottom: 2rem;
-                  max-width: 700px;
-                  margin-left: auto;
-                  margin-right: auto;
                 "
               >
-                2019 yılından beri veri bilimi ve makine öğrenmesi alanında
-                çalışmaktayım. Python, R ve SQL kullanarak büyük veri setlerini
-                analiz ediyor, iş problemlerine yönelik akıllı çözümler
-                geliştiriyorum.
+                Senior Data Scientist
               </p>
 
               <p
                 style="
-                  font-size: 1.1rem;
-                  line-height: 1.7;
+                  font-size: 1.15rem;
+                  line-height: 1.8;
                   color: #566573;
-                  margin-bottom: 3rem;
-                  max-width: 700px;
-                  margin-left: auto;
-                  margin-right: auto;
-                "
-              >
-                Makine öğrenmesi, derin öğrenme ve yapay zeka teknolojileri ile
-                tahmin modelleri, sınıflandırma algoritmaları ve veri
-                görselleştirme projeleri geliştiriyorum. Ayrıca cloud
-                platformları ve MLOps alanlarında da deneyim sahibiyim.
-              </p>
-
-              <!-- Skills Pills -->
-              <div
-                style="
-                  display: flex;
-                  flex-wrap: wrap;
-                  gap: 0.8rem;
-                  justify-content: center;
-                  margin-bottom: 3rem;
-                "
-              >
-                <span
-                  style="
-                    background: #f8f9fa;
-                    color: #2c3e50;
-                    padding: 8px 16px;
-                    border-radius: 20px;
-                    font-size: 0.9rem;
-                    font-weight: 500;
-                    border: 1px solid #e9ecef;
-                  "
-                >
-                  Python
-                </span>
-                <span
-                  style="
-                    background: #f8f9fa;
-                    color: #2c3e50;
-                    padding: 8px 16px;
-                    border-radius: 20px;
-                    font-size: 0.9rem;
-                    font-weight: 500;
-                    border: 1px solid #e9ecef;
-                  "
-                >
-                  Machine Learning
-                </span>
-                <span
-                  style="
-                    background: #f8f9fa;
-                    color: #2c3e50;
-                    padding: 8px 16px;
-                    border-radius: 20px;
-                    font-size: 0.9rem;
-                    font-weight: 500;
-                    border: 1px solid #e9ecef;
-                  "
-                >
-                  Deep Learning
-                </span>
-                <span
-                  style="
-                    background: #f8f9fa;
-                    color: #2c3e50;
-                    padding: 8px 16px;
-                    border-radius: 20px;
-                    font-size: 0.9rem;
-                    font-weight: 500;
-                    border: 1px solid #e9ecef;
-                  "
-                >
-                  Data Visualization
-                </span>
-                <span
-                  style="
-                    background: #f8f9fa;
-                    color: #2c3e50;
-                    padding: 8px 16px;
-                    border-radius: 20px;
-                    font-size: 0.9rem;
-                    font-weight: 500;
-                    border: 1px solid #e9ecef;
-                  "
-                >
-                  Cloud Platforms
-                </span>
-                <span
-                  style="
-                    background: #f8f9fa;
-                    color: #2c3e50;
-                    padding: 8px 16px;
-                    border-radius: 20px;
-                    font-size: 0.9rem;
-                    font-weight: 500;
-                    border: 1px solid #e9ecef;
-                  "
-                >
-                  MLOps
-                </span>
-              </div>
-
-              <!-- Contact Info -->
-              <div
-                style="
-                  display: grid;
-                  grid-template-columns: repeat(3, 1fr);
-                  gap: 3rem;
-                  margin-top: 3rem;
-                  background: #f8f9fa;
-                  padding: 3rem 2rem;
-                  border-radius: 12px;
-                  border: 1px solid #e9ecef;
+                  margin-bottom: 2.5rem;
                   max-width: 800px;
                   margin-left: auto;
                   margin-right: auto;
                 "
               >
-                <div style="text-align: center">
-                  <div
-                    style="
-                      width: 60px;
-                      height: 60px;
-                      background: #3498db;
-                      color: white;
-                      border-radius: 50%;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      margin: 0 auto 1.5rem auto;
-                      font-size: 1.4rem;
-                      box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-                    "
-                  >
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <h4
-                    style="
-                      font-size: 1.1rem;
-                      font-weight: 600;
-                      color: #2c3e50;
-                      margin-bottom: 0.8rem;
-                    "
-                  >
-                    Lokasyon
-                  </h4>
-                  <p
-                    style="
-                      font-size: 1rem;
-                      color: #566573;
-                      margin: 0;
-                      font-weight: 500;
-                    "
-                  >
-                    İstanbul, Türkiye
-                  </p>
-                </div>
+                Veri bilimi ve yapay zeka alanında 5+ yıllık deneyimim var.
+                Karmaşık veri problemlerini çözmek ve bu çözümleri üretime
+                geçirmek konusunda uzmanım. Bu alanda tutkulu bir şekilde araştırmalar yapıyor, 
+                makine öğrenmesi ve derin öğrenme projeleri geliştiriyorum.
+              </p>
+            </div>
 
-                <div style="text-align: center">
+            <!-- Skills Grid -->
+            <div class="row justify-content-center">
+              
+              <!-- Expertise Areas - Full Width First -->
+              <div class="col-lg-8 mb-4">
+                <div
+                  style="
+                    background: #ffffff;
+                    border-radius: 16px;
+                    padding: 2.5rem;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+                    border: 1px solid #f1f2f6;
+                  "
+                >
                   <div
                     style="
-                      width: 60px;
-                      height: 60px;
-                      background: #27ae60;
-                      color: white;
-                      border-radius: 50%;
                       display: flex;
                       align-items: center;
                       justify-content: center;
-                      margin: 0 auto 1.5rem auto;
-                      font-size: 1.4rem;
-                      box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+                      margin-bottom: 2rem;
                     "
                   >
-                    <i class="fas fa-graduation-cap"></i>
+                    <div
+                      style="
+                        width: 50px;
+                        height: 50px;
+                        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                        border-radius: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 1.2rem;
+                      "
+                    >
+                      <i
+                        class="fas fa-brain"
+                        style="color: white; font-size: 1.3rem"
+                      ></i>
+                    </div>
+                    <h4
+                      style="
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        color: #2c3e50;
+                        margin: 0;
+                      "
+                    >
+                      Uzmanlık Alanları
+                    </h4>
                   </div>
-                  <h4
-                    style="
-                      font-size: 1.1rem;
-                      font-weight: 600;
-                      color: #2c3e50;
-                      margin-bottom: 0.8rem;
-                    "
-                  >
-                    Eğitim
-                  </h4>
-                  <p
-                    style="
-                      font-size: 1rem;
-                      color: #566573;
-                      margin: 0;
-                      font-weight: 500;
-                    "
-                  >
-                    Bilgisayar Mühendisliği
-                  </p>
-                </div>
 
-                <div style="text-align: center">
-                  <div
-                    style="
-                      width: 60px;
-                      height: 60px;
-                      background: #e74c3c;
-                      color: white;
-                      border-radius: 50%;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      margin: 0 auto 1.5rem auto;
-                      font-size: 1.4rem;
-                      box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
-                    "
-                  >
-                    <i class="fas fa-language"></i>
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div style="text-align: center; padding: 1rem;">
+                        <div
+                          style="
+                            font-weight: 600;
+                            color: #2c3e50;
+                            margin-bottom: 0.8rem;
+                            font-size: 1.1rem;
+                          "
+                        >
+                          Machine Learning & AI
+                        </div>
+                        <div
+                          style="
+                            font-size: 0.95rem;
+                            color: #7f8c8d;
+                            line-height: 1.6;
+                          "
+                        >
+                          Gözetimli/gözetimsiz öğrenme, derin öğrenme algoritmaları ve sinir ağları
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                      <div style="text-align: center; padding: 1rem;">
+                        <div
+                          style="
+                            font-weight: 600;
+                            color: #2c3e50;
+                            margin-bottom: 0.8rem;
+                            font-size: 1.1rem;
+                          "
+                        >
+                          Veri Bilimi & Analitik
+                        </div>
+                        <div
+                          style="
+                            font-size: 0.95rem;
+                            color: #7f8c8d;
+                            line-height: 1.6;
+                          "
+                        >
+                          Büyük veri analizi, istatistiksel modelleme ve veri görselleştirme
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                      <div style="text-align: center; padding: 1rem;">
+                        <div
+                          style="
+                            font-weight: 600;
+                            color: #2c3e50;
+                            margin-bottom: 0.8rem;
+                            font-size: 1.1rem;
+                          "
+                        >
+                          MLOps & Cloud
+                        </div>
+                        <div
+                          style="
+                            font-size: 0.95rem;
+                            color: #7f8c8d;
+                            line-height: 1.6;
+                          "
+                        >
+                          Model deployment, CI/CD pipeline'ları, AWS ve GCP yönetimi
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h4
-                    style="
-                      font-size: 1.1rem;
-                      font-weight: 600;
-                      color: #2c3e50;
-                      margin-bottom: 0.8rem;
-                    "
-                  >
-                    Diller
-                  </h4>
-                  <p
-                    style="
-                      font-size: 1rem;
-                      color: #566573;
-                      margin: 0;
-                      font-weight: 500;
-                    "
-                  >
-                    Türkçe, İngilizce
-                  </p>
                 </div>
               </div>
+
+              <!-- Personal Info and Interests - Side by Side -->
+              <div class="col-lg-6 mb-4">
+                <div
+                  style="
+                    background: #ffffff;
+                    border-radius: 16px;
+                    padding: 2rem;
+                    height: 100%;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+                    border: 1px solid #f1f2f6;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      margin-bottom: 1.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 1rem;
+                      "
+                    >
+                      <i
+                        class="fas fa-user"
+                        style="color: white; font-size: 1.1rem"
+                      ></i>
+                    </div>
+                    <h4
+                      style="
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        color: #2c3e50;
+                        margin: 0;
+                      "
+                    >
+                      Kişisel Bilgiler
+                    </h4>
+                  </div>
+
+                  <div
+                    style="display: flex; flex-direction: column; gap: 0.8rem"
+                  >
+                    <div style="display: flex; justify-content: space-between">
+                      <span style="color: #7f8c8d; font-size: 0.9rem"
+                        >Lokasyon</span
+                      >
+                      <span
+                        style="
+                          color: #2c3e50;
+                          font-weight: 500;
+                          font-size: 0.9rem;
+                        "
+                        >İstanbul, TR</span
+                      >
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                      <span style="color: #7f8c8d; font-size: 0.9rem"
+                        >Eğitim</span
+                      >
+                      <span
+                        style="
+                          color: #2c3e50;
+                          font-weight: 500;
+                          font-size: 0.9rem;
+                        "
+                        >Bilgisayar Mühendisliği</span
+                      >
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                      <span style="color: #7f8c8d; font-size: 0.9rem"
+                        >Diller</span
+                      >
+                      <span
+                        style="
+                          color: #2c3e50;
+                          font-weight: 500;
+                          font-size: 0.9rem;
+                        "
+                        >Türkçe, İngilizce</span
+                      >
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                      <span style="color: #7f8c8d; font-size: 0.9rem"
+                        >E-posta</span
+                      >
+                      <span
+                        style="
+                          color: #3498db;
+                          font-weight: 500;
+                          font-size: 0.9rem;
+                        "
+                        >ismailumutluoglu10@gmail.com</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interests -->
+              <div class="col-lg-6 mb-4">
+                <div
+                  style="
+                    background: #ffffff;
+                    border-radius: 16px;
+                    padding: 2rem;
+                    height: 100%;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+                    border: 1px solid #f1f2f6;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      margin-bottom: 1.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 1rem;
+                      "
+                    >
+                      <i
+                        class="fas fa-heart"
+                        style="color: white; font-size: 1.1rem"
+                      ></i>
+                    </div>
+                    <h4
+                      style="
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        color: #2c3e50;
+                        margin: 0;
+                      "
+                    >
+                      İlgi Alanları
+                    </h4>
+                  </div>
+
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+                    <span
+                      style="
+                        background: #f8f9fa;
+                        color: #2c3e50;
+                        padding: 0.4rem 0.8rem;
+                        border-radius: 15px;
+                        font-size: 0.85rem;
+                        font-weight: 500;
+                        border: 1px solid #e9ecef;
+                        transition: all 0.3s ease;
+                      "
+                      onmouseover="this.style.background='#3498db'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(52, 152, 219, 0.3)'"
+                      onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'; this.style.boxShadow='none'"
+                      >Yapay Zeka</span
+                    >
+                    <span
+                      style="
+                        background: #f8f9fa;
+                        color: #2c3e50;
+                        padding: 0.4rem 0.8rem;
+                        border-radius: 15px;
+                        font-size: 0.85rem;
+                        font-weight: 500;
+                        border: 1px solid #e9ecef;
+                        transition: all 0.3s ease;
+                      "
+                      onmouseover="this.style.background='#3498db'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(52, 152, 219, 0.3)'"
+                      onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'; this.style.boxShadow='none'"
+                      >Teknoloji</span
+                    >
+                    <span
+                      style="
+                        background: #f8f9fa;
+                        color: #2c3e50;
+                        padding: 0.4rem 0.8rem;
+                        border-radius: 15px;
+                        font-size: 0.85rem;
+                        font-weight: 500;
+                        border: 1px solid #e9ecef;
+                        transition: all 0.3s ease;
+                      "
+                      onmouseover="this.style.background='#3498db'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(52, 152, 219, 0.3)'"
+                      onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'; this.style.boxShadow='none'"
+                      >Araştırma</span
+                    >
+                    <span
+                      style="
+                        background: #f8f9fa;
+                        color: #2c3e50;
+                        padding: 0.4rem 0.8rem;
+                        border-radius: 15px;
+                        font-size: 0.85rem;
+                        font-weight: 500;
+                        border: 1px solid #e9ecef;
+                        transition: all 0.3s ease;
+                      "
+                      onmouseover="this.style.background='#3498db'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(52, 152, 219, 0.3)'"
+                      onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'; this.style.boxShadow='none'"
+                      >Yazılım</span
+                    >
+                    <span
+                      style="
+                        background: #f8f9fa;
+                        color: #2c3e50;
+                        padding: 0.4rem 0.8rem;
+                        border-radius: 15px;
+                        font-size: 0.85rem;
+                        font-weight: 500;
+                        border: 1px solid #e9ecef;
+                        transition: all 0.3s ease;
+                      "
+                      onmouseover="this.style.background='#3498db'; this.style.color='white'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 12px rgba(52, 152, 219, 0.3)'"
+                      onmouseout="this.style.background='#f8f9fa'; this.style.color='#2c3e50'; this.style.transform='translateY(0)'; this.style.boxShadow='none'"
+                      >İnovasyon</span
+                    >
+                  </div>
+                </div>
+              </div>
+
             </div>
+          </div>
+        </div>
+      </div>
           </div>
         </div>
       </div>
@@ -849,11 +1212,28 @@
       <div class="container">
         <!-- Section Header -->
         <div class="row">
-          <div class="col-lg-12">
-            <div class="section-header text-center mb-5">
-              <h2 class="section-title">Deneyim & Eğitim</h2>
-              <p class="section-subtitle">
-                Profesyonel yolculuğum ve eğitim geçmişim
+          <div class="col-12">
+            <div style="text-align: center; margin-bottom: 5rem">
+              <h2
+                style="
+                  font-size: 2.8rem;
+                  font-weight: 300;
+                  color: #2c3e50;
+                  margin-bottom: 1rem;
+                  letter-spacing: -0.02em;
+                "
+              >
+                Deneyim
+              </h2>
+              <p
+                style="
+                  font-size: 1.2rem;
+                  color: #7f8c8d;
+                  font-weight: 300;
+                  margin: 0;
+                "
+              >
+                Teknik becerilerim, eğitim geçmişim ve sertifikalarım
               </p>
             </div>
           </div>
@@ -861,8 +1241,8 @@
 
         <!-- Experience Tabs -->
         <div class="experience-tabs">
-          <button class="tab-button active" data-tab="work">
-            <i class="fas fa-briefcase me-2"></i>İş Deneyimi
+          <button class="tab-button active" data-tab="skills">
+            <i class="fas fa-code me-2"></i>Teknik Yetenekler
           </button>
           <button class="tab-button" data-tab="education">
             <i class="fas fa-graduation-cap me-2"></i>Eğitim
@@ -874,171 +1254,141 @@
 
         <!-- Timeline Container -->
         <div class="timeline-container">
-          <!-- Work Experience Grid -->
-          <div class="timeline-content active" id="work-timeline">
-            <div class="experience-grid">
-              <!-- Current Position -->
-              <div class="experience-card modern-card">
-                <div class="card-header">
-                  <div class="experience-date">
-                    <i class="fas fa-calendar me-1"></i>Ocak 2023 - Devam Ediyor
+          <!-- Technical Skills Grid -->
+          <div class="timeline-content active" id="skills-timeline">
+            <div class="skills-container">
+              <!-- Data Science & ML Section -->
+              <div class="skill-category-card">
+                <div class="skill-category-header">
+                  <div class="skill-icon data-science">
+                    <i class="fas fa-brain"></i>
                   </div>
-                  <div class="experience-status current">
-                    <i class="fas fa-circle"></i> Aktif
-                  </div>
+                  <h3>Veri Bilimi & Makine Öğrenmesi</h3>
+                  <p>Veri analizi, model geliştirme ve derin öğrenme</p>
                 </div>
-                <div class="card-content">
-                  <h3 class="experience-title">Senior Data Scientist</h3>
-                  <div class="experience-company">
-                    <i class="fas fa-building"></i>
-                    DataTech Solutions
-                  </div>
-                  <div class="experience-description">
-                    <p>
-                      Büyük ölçekli veri analizi projeleri ve makine öğrenmesi
-                      modellerinin geliştirilmesinden sorumlu. Takım liderliği
-                      ve junior data scientist'lerin mentorlüğünü yapıyorum.
-                    </p>
-                    <div class="key-achievements">
-                      <h5><i class="fas fa-star"></i> Temel Başarılar</h5>
-                      <ul>
-                        <li>Tahmin modelleri ve sınıflandırma algoritmaları</li>
-                        <li>AWS ve GCP platformlarında MLOps pipeline'ları</li>
-                        <li>Büyük veri setlerinin analizi ve görselleştirme</li>
-                        <li>Junior data scientist'ler için mentorship</li>
-                      </ul>
+                
+                <div class="tools-grid">
+                  <div class="tool-category">
+                    <h5>Programlama Dilleri</h5>
+                    <div class="tool-items">
+                      <span class="tool-item">Python</span>
+                      <span class="tool-item">SQL</span>
+                      <span class="tool-item">R</span>
+                      <span class="tool-item">JavaScript</span>
                     </div>
                   </div>
-                  <div class="experience-skills">
-                    <span class="skill-chip">Python</span>
-                    <span class="skill-chip">TensorFlow</span>
-                    <span class="skill-chip">PyTorch</span>
-                    <span class="skill-chip">AWS</span>
-                    <span class="skill-chip">SQL</span>
+                  
+                  <div class="tool-category">
+                    <h5>ML Kütüphaneleri</h5>
+                    <div class="tool-items">
+                      <span class="tool-item">Scikit-learn</span>
+                      <span class="tool-item">TensorFlow</span>
+                      <span class="tool-item">PyTorch</span>
+                      <span class="tool-item">Keras</span>
+                      <span class="tool-item">XGBoost</span>
+                      <span class="tool-item">LightGBM</span>
+                    </div>
+                  </div>
+                  
+                  <div class="tool-category">
+                    <h5>Veri Araçları</h5>
+                    <div class="tool-items">
+                      <span class="tool-item">Pandas</span>
+                      <span class="tool-item">NumPy</span>
+                      <span class="tool-item">Matplotlib</span>
+                      <span class="tool-item">Seaborn</span>
+                      <span class="tool-item">Plotly</span>
+                      <span class="tool-item">Tableau</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Previous Position -->
-              <div class="experience-card modern-card">
-                <div class="card-header">
-                  <div class="experience-date">
-                    <i class="fas fa-calendar me-1"></i>Mart 2021 - Aralık 2022
+              <!-- Web Development Section -->
+              <div class="skill-category-card">
+                <div class="skill-category-header">
+                  <div class="skill-icon web-dev">
+                    <i class="fas fa-globe"></i>
                   </div>
-                  <div class="experience-duration">
-                    <i class="fas fa-clock"></i> 1y 10m
-                  </div>
+                  <h3>Web Programlama</h3>
+                  <p>Full-stack geliştirme ve modern web teknolojileri</p>
                 </div>
-                <div class="card-content">
-                  <h3 class="experience-title">Data Scientist</h3>
-                  <div class="experience-company">
-                    <i class="fas fa-building"></i>
-                    AI Analytics Co.
-                  </div>
-                  <div class="experience-description">
-                    <p>
-                      Fintech şirketinde müşteri davranış analizi ve risk
-                      değerlendirme modelleri geliştirdim. Veri odaklı iş
-                      çözümleri üretmekten sorumlu oldum.
-                    </p>
-                    <div class="key-achievements">
-                      <h5><i class="fas fa-target"></i> Temel Projeler</h5>
-                      <ul>
-                        <li>Müşteri segmentasyonu clustering algoritmaları</li>
-                        <li>Kredi risk modelleri ve dolandırıcılık tespiti</li>
-                        <li>ETL süreçleri yönetimi</li>
-                        <li>Tableau ve Power BI dashboard geliştirme</li>
-                      </ul>
+                
+                <div class="tools-grid">
+                  <div class="tool-category">
+                    <h5>Frontend</h5>
+                    <div class="tool-items">
+                      <span class="tool-item">HTML/CSS</span>
+                      <span class="tool-item">JavaScript</span>
+                      <span class="tool-item">React</span>
+                      <span class="tool-item">Bootstrap</span>
+                      <span class="tool-item">Tailwind CSS</span>
                     </div>
                   </div>
-                  <div class="experience-skills">
-                    <span class="skill-chip">Python</span>
-                    <span class="skill-chip">Scikit-learn</span>
-                    <span class="skill-chip">SQL</span>
-                    <span class="skill-chip">Tableau</span>
+                  
+                  <div class="tool-category">
+                    <h5>Backend & Frameworks</h5>
+                    <div class="tool-items">
+                      <span class="tool-item">Django</span>
+                      <span class="tool-item">Flask</span>
+                      <span class="tool-item">FastAPI</span>
+                      <span class="tool-item">Node.js</span>
+                      <span class="tool-item">Express.js</span>
+                    </div>
+                  </div>
+                  
+                  <div class="tool-category">
+                    <h5>Veritabanı & Cloud</h5>
+                    <div class="tool-items">
+                      <span class="tool-item">PostgreSQL</span>
+                      <span class="tool-item">MySQL</span>
+                      <span class="tool-item">AWS</span>
+                      <span class="tool-item">MongoDB</span>
+                      <span class="tool-item">GCP</span>
+                      <span class="tool-item">Docker</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <!-- First Position -->
-              <div class="experience-card modern-card">
-                <div class="card-header">
-                  <div class="experience-date">
-                    <i class="fas fa-calendar me-1"></i>Haziran 2019 - Şubat
-                    2021
+              <!-- Tools & Technologies -->
+              <div class="skill-category-card full-width">
+                <div class="skill-category-header">
+                  <div class="skill-icon tools">
+                    <i class="fas fa-tools"></i>
                   </div>
-                  <div class="experience-duration">
-                    <i class="fas fa-clock"></i> 1y 8m
-                  </div>
+                  <h3>Araçlar & Teknolojiler</h3>
+                  <p>Geliştirme, versiyon kontrolü ve deployment araçları</p>
                 </div>
-                <div class="card-content">
-                  <h3 class="experience-title">Junior Data Analyst</h3>
-                  <div class="experience-company">
-                    <i class="fas fa-building"></i>
-                    Data Insights Studio
-                  </div>
-                  <div class="experience-description">
-                    <p>
-                      Kariyerime data analyst olarak başladım. Veri toplama,
-                      temizleme ve temel analiz tekniklerini öğrenerek iş zekası
-                      raporları hazırladım.
-                    </p>
-                    <div class="key-achievements">
-                      <h5><i class="fas fa-rocket"></i> İlk Adımlar</h5>
-                      <ul>
-                        <li>Excel ve SQL ile veri analizi</li>
-                        <li>Python pandas ile veri manipülasyonu</li>
-                        <li>ETL süreçleri ve veri kalitesi</li>
-                        <li>İş ekipleri için analitik raporlar</li>
-                      </ul>
+                
+                <div class="tools-grid">
+                  <div class="tool-category">
+                    <h5>Development</h5>
+                    <div class="tool-items">
+                      <span class="tool-item">VS Code</span>
+                      <span class="tool-item">PyCharm</span>
+                      <span class="tool-item">Jupyter</span>
+                      <span class="tool-item">Google Colab</span>
                     </div>
                   </div>
-                  <div class="experience-skills">
-                    <span class="skill-chip">SQL</span>
-                    <span class="skill-chip">Excel</span>
-                    <span class="skill-chip">Python</span>
-                    <span class="skill-chip">Pandas</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Freelance -->
-              <div class="experience-card modern-card freelance-card">
-                <div class="card-header">
-                  <div class="experience-date">
-                    <i class="fas fa-calendar me-1"></i>2018 - 2019
-                  </div>
-                  <div class="experience-type">
-                    <i class="fas fa-user"></i> Freelance
-                  </div>
-                </div>
-                <div class="card-content">
-                  <h3 class="experience-title">Freelance Data Analyst</h3>
-                  <div class="experience-company">
-                    <i class="fas fa-user"></i>
-                    Bağımsız Çalışma
-                  </div>
-                  <div class="experience-description">
-                    <p>
-                      Üniversite yıllarımda freelance veri analizi projeleriyle
-                      deneyim kazandım. Küçük işletmeler için satış analizi ve
-                      müşteri segmentasyonu projeleri yürüttüm.
-                    </p>
-                    <div class="key-achievements">
-                      <h5><i class="fas fa-lightbulb"></i> Öğrenme</h5>
-                      <ul>
-                        <li>E-ticaret satış verilerinin analizi</li>
-                        <li>Müşteri davranış analizi</li>
-                        <li>Excel ve Google Analytics raporları</li>
-                        <li>Temel istatistik ve hipotez testleri</li>
-                      </ul>
+                  
+                  <div class="tool-category">
+                    <h5>Version Control</h5>
+                    <div class="tool-items">
+                      <span class="tool-item">Git</span>
+                      <span class="tool-item">GitHub</span>
+                      <span class="tool-item">GitLab</span>
                     </div>
                   </div>
-                  <div class="experience-skills">
-                    <span class="skill-chip">Excel</span>
-                    <span class="skill-chip">Google Analytics</span>
-                    <span class="skill-chip">SQL</span>
-                    <span class="skill-chip">Statistics</span>
+                  
+                  <div class="tool-category">
+                    <h5>MLOps & Deployment</h5>
+                    <div class="tool-items">
+                      <span class="tool-item">MLflow</span>
+                      <span class="tool-item">Kubernetes</span>
+                      <span class="tool-item">Heroku</span>
+                      <span class="tool-item">Streamlit</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1306,39 +1656,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Scrum Master -->
-              <div class="certification-card management-cert">
-                <div class="cert-header">
-                  <div class="cert-icon scrum-cert">
-                    <i class="fas fa-certificate"></i>
-                  </div>
-                  <div class="cert-level">
-                    <span class="level-badge certified">Certified</span>
-                  </div>
-                </div>
-                <div class="cert-content">
-                  <h3 class="cert-title">Certified Scrum Master (CSM)</h3>
-                  <div class="cert-provider">
-                    <i class="fas fa-users"></i> Scrum Alliance
-                  </div>
-                  <div class="cert-date">
-                    <i class="fas fa-calendar"></i> Nisan 2023
-                  </div>
-                  <div class="cert-description">
-                    <p>
-                      Agile methodologies ve Scrum framework konusunda resmi
-                      sertifikasyon.
-                    </p>
-                  </div>
-                  <div class="cert-skills">
-                    <span class="cert-skill">Scrum</span>
-                    <span class="cert-skill">Agile</span>
-                    <span class="cert-skill">Team Leadership</span>
-                    <span class="cert-skill">Project Management</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1346,289 +1663,675 @@
     </section>
 
     <!-- Projects Section -->
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section py-5">
+    <section 
+      id="projects" 
+      style="
+        background: #ffffff;
+        padding: 6rem 0;
+        position: relative;
+      "
+    >
       <div class="container">
         <!-- Section Header -->
         <div class="row">
-          <div class="col-lg-12">
-            <div class="section-header text-center mb-5">
-              <h2 class="section-title">Projelerim</h2>
-              <p class="section-subtitle">
-                Geliştirdiğim bazı projeler ve çalışmalarım
+          <div class="col-12">
+            <div style="text-align: center; margin-bottom: 5rem">
+              <h2
+                style="
+                  font-size: 2.8rem;
+                  font-weight: 300;
+                  color: #2c3e50;
+                  margin-bottom: 1rem;
+                  letter-spacing: -0.02em;
+                "
+              >
+                Projelerim
+              </h2>
+              <p
+                style="
+                  font-size: 1.2rem;
+                  color: #7f8c8d;
+                  font-weight: 300;
+                  margin: 0;
+                "
+              >
+                Veri bilimi ve makine öğrenmesi alanında geliştirdiğim projeler
               </p>
             </div>
           </div>
-        </div>
-
-        <!-- Project Filters -->
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">
-            <i class="fas fa-layer-group me-1"></i>Tümü
-          </button>
-          <button class="filter-btn" data-filter="ai">
-            <i class="fas fa-brain me-1"></i>Yapay Zeka
-          </button>
-          <button class="filter-btn" data-filter="data">
-            <i class="fas fa-chart-bar me-1"></i>Veri Bilimi
-          </button>
-          <button class="filter-btn" data-filter="web">
-            <i class="fas fa-globe me-1"></i>Web Geliştirme
-          </button>
-          <button class="filter-btn" data-filter="ml">
-            <i class="fas fa-robot me-1"></i>Makine Öğrenmesi
-          </button>
         </div>
 
         <!-- Projects Grid -->
-        <div class="projects-grid">
-          <!-- Project 1: Müşteri Segmentasyonu ML Projesi -->
-          <div class="project-card" data-category="ml data">
-            <div class="project-image">
-              <div class="project-image-placeholder">
-                <i class="fas fa-users"></i>
-              </div>
-              <div class="project-status completed">Tamamlandı</div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Müşteri Segmentasyonu ML Projesi</h3>
-              <p class="project-description">
-                K-Means clustering algoritması kullanarak e-ticaret
-                müşterilerinin satın alma davranışlarına göre segmentasyonu. RFM
-                analizi ve müşteri yaşam döngüsü değeri hesaplama.
-              </p>
-              <div class="project-technologies">
-                <span class="tech-tag python">Python</span>
-                <span class="tech-tag">Scikit-learn</span>
-                <span class="tech-tag">Pandas</span>
-                <span class="tech-tag">Matplotlib</span>
-                <span class="tech-tag">Seaborn</span>
-                <span class="tech-tag">Jupyter</span>
-              </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/ismailumutluoglu/customer-segmentation"
-                  target="_blank"
-                  class="project-btn project-btn-primary"
+        <div class="row g-4">
+          <!-- Project 1: E-Ticaret Müşteri Segmentasyonu -->
+          <div class="col-lg-6 col-md-6">
+            <div
+              style="
+                background: #ffffff;
+                border: 1px solid #e9ecef;
+                border-radius: 12px;
+                padding: 2.5rem;
+                height: 100%;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+              "
+              onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(52, 152, 219, 0.15)'; this.style.borderColor='#3498db'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#e9ecef'"
+            >
+              <!-- Project Header -->
+              <div style="margin-bottom: 2rem">
+                <div
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+                    border: 2px solid #3498db;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1.5rem;
+                    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
+                  "
                 >
-                  <i class="fab fa-github"></i>GitHub
-                </a>
-                <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-chart-line"></i>Demo
+                  <i class="fas fa-chart-pie" style="color: #ffffff; font-size: 1.2rem"></i>
+                </div>
+                
+                <h3
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    margin-bottom: 1rem;
+                    line-height: 1.4;
+                  "
+                >
+                  E-Ticaret Müşteri Segmentasyonu
+                </h3>
+                
+                <p
+                  style="
+                    color: #7f8c8d;
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  K-Means ve RFM analizi kullanarak e-ticaret müşterilerini segmentlere ayıran makine öğrenmesi projesi. 
+                  Müşteri davranış analizleri ve kişiselleştirilmiş pazarlama stratejileri geliştirme.
+                </p>
+              </div>
+
+              <!-- Technologies -->
+              <div style="margin-bottom: 2rem">
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >Python</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >Scikit-learn</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >Pandas</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >Plotly</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div style="display: flex; justify-content: center">
+                <a
+                  href="#"
+                  style="
+                    background: #2c3e50;
+                    color: white;
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    display: inline-flex;
+                    align-items: center;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.background='#34495e'"
+                  onmouseout="this.style.background='#2c3e50'"
+                >
+                  <i class="fab fa-github" style="margin-right: 0.5rem"></i>
+                  GitHub'da Görüntüle
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Project 2: Duygu Analizi NLP Projesi -->
-          <div class="project-card" data-category="ai ml">
-            <div class="project-image">
-              <div class="project-image-placeholder">
-                <i class="fas fa-comments"></i>
-              </div>
-              <div class="project-status completed">Tamamlandı</div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Türkçe Duygu Analizi NLP</h3>
-              <p class="project-description">
-                BERT tabanlı transformer modeli ile Türkçe metinlerde duygu
-                analizi. Twitter verilerinde pozitif/negatif duygu
-                sınıflandırması ve gerçek zamanlı analiz dashboard'u.
-              </p>
-              <div class="project-technologies">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Transformers</span>
-                <span class="tech-tag">PyTorch</span>
-                <span class="tech-tag">BERT</span>
-                <span class="tech-tag">Flask</span>
-                <span class="tech-tag">Streamlit</span>
-              </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/ismailumutluoglu/turkish-sentiment-analysis"
-                  target="_blank"
-                  class="project-btn project-btn-primary"
+          <!-- Project 2: Türkçe Duygu Analizi -->
+          <div class="col-lg-6 col-md-6">
+            <div
+              style="
+                background: #ffffff;
+                border: 1px solid #e9ecef;
+                border-radius: 12px;
+                padding: 2.5rem;
+                height: 100%;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+              "
+              onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(39, 174, 96, 0.15)'; this.style.borderColor='#27ae60'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#e9ecef'"
+            >
+              <!-- Project Header -->
+              <div style="margin-bottom: 2rem">
+                <div
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+                    border: 2px solid #27ae60;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1.5rem;
+                    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.2);
+                  "
                 >
-                  <i class="fab fa-github"></i>GitHub
-                </a>
-                <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-external-link-alt"></i>Demo
+                  <i class="fas fa-comments" style="color: #ffffff; font-size: 1.2rem"></i>
+                </div>
+                
+                <h3
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    margin-bottom: 1rem;
+                    line-height: 1.4;
+                  "
+                >
+                  Türkçe Duygu Analizi
+                </h3>
+                
+                <p
+                  style="
+                    color: #7f8c8d;
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  BERT tabanlı derin öğrenme modeli ile Türkçe metinlerin duygu analizini yapan NLP projesi. 
+                  Sosyal medya verileri üzerinde %92 doğruluk oranına ulaşan model.
+                </p>
+              </div>
+
+              <!-- Technologies -->
+              <div style="margin-bottom: 2rem">
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >Python</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >PyTorch</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >BERT</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >Streamlit</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div style="display: flex; justify-content: center">
+                <a
+                  href="#"
+                  style="
+                    background: #2c3e50;
+                    color: white;
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    display: inline-flex;
+                    align-items: center;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.background='#34495e'"
+                  onmouseout="this.style.background='#2c3e50'"
+                >
+                  <i class="fab fa-github" style="margin-right: 0.5rem"></i>
+                  GitHub'da Görüntüle
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Project 3: Hisse Senedi Tahmin Modeli -->
-          <div class="project-card" data-category="ai data">
-            <div class="project-image">
-              <div class="project-image-placeholder">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <div class="project-status completed">Tamamlandı</div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Hisse Senedi Fiyat Tahmin Modeli</h3>
-              <p class="project-description">
-                LSTM derin öğrenme modeli ile BIST 100 hisse senetlerinin fiyat
-                tahmini. Teknik indikatörler ve makroekonomik verilerle hibrit
-                model geliştirme.
-              </p>
-              <div class="project-technologies">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">TensorFlow</span>
-                <span class="tech-tag">Keras</span>
-                <span class="tech-tag">LSTM</span>
-                <span class="tech-tag">Alpha Vantage API</span>
-                <span class="tech-tag">Plotly</span>
-              </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/ismailumutluoglu/stock-price-prediction"
-                  target="_blank"
-                  class="project-btn project-btn-primary"
+          <!-- Project 3: Hisse Senedi Tahmin Sistemi -->
+          <div class="col-lg-6 col-md-6">
+            <div
+              style="
+                background: #ffffff;
+                border: 1px solid #e9ecef;
+                border-radius: 12px;
+                padding: 2.5rem;
+                height: 100%;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+              "
+              onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(231, 76, 60, 0.15)'; this.style.borderColor='#e74c3c'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#e9ecef'"
+            >
+              <!-- Project Header -->
+              <div style="margin-bottom: 2rem">
+                <div
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+                    border: 2px solid #e74c3c;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1.5rem;
+                    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.2);
+                  "
                 >
-                  <i class="fab fa-github"></i>GitHub
-                </a>
-                <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-chart-area"></i>Analiz
+                  <i class="fas fa-chart-line" style="color: #ffffff; font-size: 1.2rem"></i>
+                </div>
+                
+                <h3
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    margin-bottom: 1rem;
+                    line-height: 1.4;
+                  "
+                >
+                  Hisse Senedi Tahmin & Risk Analizi
+                </h3>
+                
+                <p
+                  style="
+                    color: #7f8c8d;
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  LSTM ve Random Forest algoritmalarını kullanarak hisse senedi fiyat tahmini yapan sistem. 
+                  Teknik analiz göstergeleri ve risk yönetimi araçları ile desteklenen kapsamlı finansal model.
+                </p>
+              </div>
+
+              <!-- Technologies -->
+              <div style="margin-bottom: 2rem">
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >Python</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >TensorFlow</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >LSTM</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >Flask</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div style="display: flex; justify-content: center">
+                <a
+                  href="#"
+                  style="
+                    background: #2c3e50;
+                    color: white;
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    display: inline-flex;
+                    align-items: center;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.background='#34495e'"
+                  onmouseout="this.style.background='#2c3e50'"
+                >
+                  <i class="fab fa-github" style="margin-right: 0.5rem"></i>
+                  GitHub'da Görüntüle
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Project 4: Görüntü Sınıflandırma CNN -->
-          <div class="project-card" data-category="ai data">
-            <div class="project-image">
-              <div class="project-image-placeholder">
-                <i class="fas fa-images"></i>
-              </div>
-              <div class="project-status in-progress">Devam Ediyor</div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Tıbbi Görüntü Sınıflandırma CNN</h3>
-              <p class="project-description">
-                Konvolüsyonel Sinir Ağları ile röntgen görüntülerinden hastalık
-                teşhisi. Transfer learning ve data augmentation teknikleriyle
-                %94 doğruluk oranı.
-              </p>
-              <div class="project-technologies">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">PyTorch</span>
-                <span class="tech-tag">CNN</span>
-                <span class="tech-tag">OpenCV</span>
-                <span class="tech-tag">Matplotlib</span>
-                <span class="tech-tag">Transfer Learning</span>
-              </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/ismailumutluoglu/medical-image-classification"
-                  target="_blank"
-                  class="project-btn project-btn-primary"
+          <!-- Project 4: Tıbbi Görüntü Analizi -->
+          <div class="col-lg-6 col-md-6">
+            <div
+              style="
+                background: #ffffff;
+                border: 1px solid #e9ecef;
+                border-radius: 12px;
+                padding: 2.5rem;
+                height: 100%;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+              "
+              onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(243, 156, 18, 0.15)'; this.style.borderColor='#f39c12'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#e9ecef'"
+            >
+              <!-- Project Header -->
+              <div style="margin-bottom: 2rem">
+                <div
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+                    border: 2px solid #f39c12;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1.5rem;
+                    box-shadow: 0 2px 8px rgba(243, 156, 18, 0.2);
+                  "
                 >
-                  <i class="fab fa-github"></i>GitHub
-                </a>
-                <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-brain"></i>Model
-                </a>
+                  <i class="fas fa-microscope" style="color: #ffffff; font-size: 1.2rem"></i>
+                </div>
+                
+                <h3
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    margin-bottom: 1rem;
+                    line-height: 1.4;
+                  "
+                >
+                  Tıbbi Görüntü Analizi CNN
+                </h3>
+                
+                <p
+                  style="
+                    color: #7f8c8d;
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    margin-bottom: 1.5rem;
+                  "
+                >
+                  Convolutional Neural Network (CNN) kullanarak tıbbi görüntülerin analiz edildiği computer vision projesi. 
+                  X-ray görüntülerinden hastalık tespiti yapan %95 doğruluk oranına sahip model.
+                </p>
               </div>
-            </div>
-          </div>
 
-          <!-- Project 5: Web Scraping ve Analiz -->
-          <div class="project-card" data-category="data web">
-            <div class="project-image">
-              <div class="project-image-placeholder">
-                <i class="fas fa-spider"></i>
+              <!-- Technologies -->
+              <div style="margin-bottom: 2rem">
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >Python</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >Keras</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >CNN</span>
+                  <span
+                    style="
+                      background: #f8f9fa;
+                      color: #2c3e50;
+                      padding: 0.3rem 0.8rem;
+                      border-radius: 15px;
+                      font-size: 0.85rem;
+                      font-weight: 500;
+                      border: 1px solid #e9ecef;
+                    "
+                  >OpenCV</span>
+                </div>
               </div>
-              <div class="project-status completed">Tamamlandı</div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">E-Ticaret Veri Kazıma ve Analizi</h3>
-              <p class="project-description">
-                Selenium ve BeautifulSoup ile e-ticaret sitelerinden veri
-                kazıma. Fiyat analizi, trend takibi ve otomatik raporlama
-                sistemi.
-              </p>
-              <div class="project-technologies">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Selenium</span>
-                <span class="tech-tag">BeautifulSoup</span>
-                <span class="tech-tag">Pandas</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Streamlit</span>
-              </div>
-              <div class="project-actions">
-                <a
-                  href="https://github.com/ismailumutluoglu/ecommerce-scraper"
-                  target="_blank"
-                  class="project-btn project-btn-primary"
-                >
-                  <i class="fab fa-github"></i>GitHub
-                </a>
-                <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-chart-bar"></i>Dashboard
-                </a>
-              </div>
-            </div>
-          </div>
 
-          <!-- Project 6: Veri Görselleştirme Dashboard -->
-          <div class="project-card" data-category="data web">
-            <div class="project-image">
-              <div class="project-image-placeholder">
-                <i class="fas fa-chart-pie"></i>
-              </div>
-              <div class="project-status completed">Tamamlandı</div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">İnteraktif Veri Analiz Dashboard</h3>
-              <p class="project-description">
-                COVID-19 verilerini analiz eden interaktif dashboard. Real-time
-                güncellemeler, dinamik grafikler ve filtreleme özellikleri.
-              </p>
-              <div class="project-technologies">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Dash</span>
-                <span class="tech-tag">Plotly</span>
-                <span class="tech-tag">Pandas</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Docker</span>
-              </div>
-              <div class="project-actions">
+              <!-- Action Buttons -->
+              <div style="display: flex; justify-content: center">
                 <a
-                  href="https://github.com/ismailumutluoglu/covid-dashboard"
-                  target="_blank"
-                  class="project-btn project-btn-primary"
+                  href="#"
+                  style="
+                    background: #2c3e50;
+                    color: white;
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    display: inline-flex;
+                    align-items: center;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.background='#34495e'"
+                  onmouseout="this.style.background='#2c3e50'"
                 >
-                  <i class="fab fa-github"></i>GitHub
-                </a>
-                <a href="#" class="project-btn project-btn-secondary">
-                  <i class="fas fa-external-link-alt"></i>Dashboard
+                  <i class="fab fa-github" style="margin-right: 0.5rem"></i>
+                  GitHub'da Görüntüle
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Load More Button -->
-        <div class="load-more-container">
-          <button class="load-more-btn" id="loadMoreProjects">
-            <i class="fas fa-plus me-2"></i>Daha Fazla Proje Yükle
-          </button>
+        <!-- Call to Action -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div
+              style="
+                text-align: center;
+                background: #f8f9fa;
+                border: 1px solid #e9ecef;
+                border-radius: 12px;
+                padding: 3rem 2rem;
+              "
+            >
+              <h3
+                style="
+                  font-size: 1.8rem;
+                  font-weight: 500;
+                  color: #2c3e50;
+                  margin-bottom: 1rem;
+                "
+              >
+                Daha Fazla Proje Geliyor
+              </h3>
+              <p
+                style="
+                  color: #7f8c8d;
+                  font-size: 1.1rem;
+                  margin-bottom: 2rem;
+                  max-width: 600px;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
+              >
+                Sürekli olarak yeni projeler geliştiriyor ve mevcut projelerimi güncelliyorum. 
+                En güncel çalışmalarımı GitHub profilimden takip edebilirsiniz.
+              </p>
+              <a
+                href="https://github.com/ismailumutluoglu"
+                target="_blank"
+                style="
+                  background: #2c3e50;
+                  color: white;
+                  padding: 1rem 2rem;
+                  border-radius: 8px;
+                  text-decoration: none;
+                  font-size: 1rem;
+                  font-weight: 500;
+                  display: inline-flex;
+                  align-items: center;
+                  transition: all 0.3s ease;
+                "
+                onmouseover="this.style.background='#34495e'"
+                onmouseout="this.style.background='#2c3e50'"
+              >
+                <i class="fab fa-github" style="margin-right: 0.8rem; font-size: 1.1rem"></i>
+                GitHub Profilimi Ziyaret Et
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section py-5">
+    <section id="contact" style="background: #f8f9fa; padding: 6rem 0; position: relative;">
       <div class="container">
         <!-- Section Header -->
         <div class="row">
-          <div class="col-lg-12">
-            <div class="section-header text-center mb-5">
-              <h2 class="section-title">İletişim</h2>
-              <p class="section-subtitle">
+          <div class="col-12">
+            <div style="text-align: center; margin-bottom: 5rem">
+              <h2
+                style="
+                  font-size: 2.8rem;
+                  font-weight: 300;
+                  color: #2c3e50;
+                  margin-bottom: 1rem;
+                  letter-spacing: -0.02em;
+                "
+              >
+                İletişim
+              </h2>
+              <p
+                style="
+                  font-size: 1.2rem;
+                  color: #7f8c8d;
+                  font-weight: 300;
+                  margin: 0;
+                "
+              >
                 Benimle iletişime geçin, birlikte harika projeler geliştirelim
               </p>
             </div>
@@ -1636,367 +2339,803 @@
         </div>
 
         <!-- Contact Content -->
-        <div class="contact-content">
-          <!-- Contact Info -->
-          <div class="contact-info">
-            <div class="contact-intro">
-              <h3>Hadi Konuşalım!</h3>
-              <p>
-                Yeni projeler, iş birliği fırsatları veya sadece merhaba demek
-                için benimle iletişime geçmekten çekinmeyin. Size en kısa sürede
-                geri dönüş yapacağım.
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            
+            <!-- Main Contact Message -->
+            <div
+              style="
+                background: #ffffff;
+                border: 1px solid #e9ecef;
+                border-radius: 12px;
+                padding: 3rem;
+                text-align: center;
+                margin-bottom: 3rem;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+              "
+            >
+              <div
+                style="
+                  width: 80px;
+                  height: 80px;
+                  background: #f8f9fa;
+                  border: 2px solid #e9ecef;
+                  border-radius: 20px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 2rem auto;
+                "
+              >
+                <i class="fas fa-comments" style="color: #2c3e50; font-size: 2rem"></i>
+              </div>
+              
+              <h3
+                style="
+                  font-size: 1.8rem;
+                  font-weight: 500;
+                  color: #2c3e50;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                Her Zaman Ulaşılabilir
+              </h3>
+              
+              <p
+                style="
+                  color: #7f8c8d;
+                  font-size: 1.1rem;
+                  line-height: 1.6;
+                  margin-bottom: 2rem;
+                  max-width: 600px;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
+              >
+                Projeleriniz hakkında konuşmak, birlikte çalışma fırsatları değerlendirmek ya da sadece merhaba demek için 
+                çekinmeden yazın. Mesajlarınızı mümkün olduğunca hızlı yanıtlamaya çalışıyorum.
               </p>
+
+              <!-- Availability Badge -->
+              <div
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  background: #e8f5e8;
+                  color: #27ae60;
+                  padding: 0.8rem 1.5rem;
+                  border-radius: 25px;
+                  font-weight: 500;
+                  border: 1px solid #d5f4e6;
+                "
+              >
+                <div
+                  style="
+                    width: 8px;
+                    height: 8px;
+                    background: #27ae60;
+                    border-radius: 50%;
+                    margin-right: 0.8rem;
+                    animation: pulse 2s infinite;
+                  "
+                ></div>
+                Yeni projelere açık
+              </div>
             </div>
 
-            <div class="contact-info-cards">
+            <!-- Social Media Links -->
+            <div class="row g-4">
+              
               <!-- Email -->
-              <div class="contact-info-card">
-                <div class="contact-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="contact-details">
-                  <h4>Email</h4>
-                  <p>
-                    <a href="mailto:ismailumutluoglu@gmail.com"
-                      >ismailumutluoglu@gmail.com</a
-                    >
+              <div class="col-lg-4 col-md-6">
+                <a 
+                  href="mailto:ismailumutluoglu10@gmail.com"
+                  style="
+                    display: block;
+                    background: #ffffff;
+                    border: 1px solid #e9ecef;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+                  "
+                  onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.1)'; this.style.borderColor='#ea4335'"
+                  onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#e9ecef'"
+                >
+                  <div
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      background: #fff5f5;
+                      border: 2px solid #fadbd8;
+                      border-radius: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 1.5rem auto;
+                    "
+                  >
+                    <i class="fas fa-envelope" style="color: #ea4335; font-size: 1.5rem"></i>
+                  </div>
+                  <h4
+                    style="
+                      font-size: 1.2rem;
+                      font-weight: 500;
+                      color: #2c3e50;
+                      margin-bottom: 0.5rem;
+                    "
+                  >
+                    E-posta
+                  </h4>
+                  <p
+                    style="
+                      color: #7f8c8d;
+                      font-size: 0.9rem;
+                      margin: 0;
+                    "
+                  >
+                    ismailumutluoglu10@gmail.com
                   </p>
-                </div>
+                </a>
               </div>
 
-              <!-- Phone -->
-              <div class="contact-info-card">
-                <div class="contact-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="contact-details">
-                  <h4>Telefon</h4>
-                  <p><a href="tel:+905551234567">+90 555 123 45 67</a></p>
-                </div>
+              <!-- LinkedIn -->
+              <div class="col-lg-4 col-md-6">
+                <a 
+                  href="https://www.linkedin.com/in/ismail-umutluoglu-a82955262"
+                  target="_blank"
+                  style="
+                    display: block;
+                    background: #ffffff;
+                    border: 1px solid #e9ecef;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+                  "
+                  onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.1)'; this.style.borderColor='#0077b5'"
+                  onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#e9ecef'"
+                >
+                  <div
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      background: #f0f8ff;
+                      border: 2px solid #d6eaf8;
+                      border-radius: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 1.5rem auto;
+                    "
+                  >
+                    <i class="fab fa-linkedin" style="color: #0077b5; font-size: 1.5rem"></i>
+                  </div>
+                  <h4
+                    style="
+                      font-size: 1.2rem;
+                      font-weight: 500;
+                      color: #2c3e50;
+                      margin-bottom: 0.5rem;
+                    "
+                  >
+                    LinkedIn
+                  </h4>
+                  <p
+                    style="
+                      color: #7f8c8d;
+                      font-size: 0.9rem;
+                      margin: 0;
+                    "
+                  >
+                    Profesyonel network
+                  </p>
+                </a>
               </div>
 
-              <!-- Location -->
-              <div class="contact-info-card">
-                <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="contact-details">
-                  <h4>Lokasyon</h4>
-                  <p>İstanbul, Türkiye</p>
-                </div>
-              </div>
-
-              <!-- Availability -->
-              <div class="contact-info-card">
-                <div class="contact-icon">
-                  <i class="fas fa-clock"></i>
-                </div>
-                <div class="contact-details">
-                  <h4>Müsaitlik</h4>
-                  <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Social Media -->
-            <div class="contact-social">
-              <h4>Sosyal Medya</h4>
-              <div class="social-links">
-                <a
+              <!-- GitHub -->
+              <div class="col-lg-4 col-md-6">
+                <a 
                   href="https://github.com/ismailumutluoglu"
                   target="_blank"
-                  class="social-link github"
-                  aria-label="GitHub"
+                  style="
+                    display: block;
+                    background: #ffffff;
+                    border: 1px solid #e9ecef;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+                  "
+                  onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.1)'; this.style.borderColor='#2c3e50'"
+                  onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#e9ecef'"
                 >
-                  <i class="fab fa-github"></i>
+                  <div
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      background: #f8f9fa;
+                      border: 2px solid #e9ecef;
+                      border-radius: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 1.5rem auto;
+                    "
+                  >
+                    <i class="fab fa-github" style="color: #2c3e50; font-size: 1.5rem"></i>
+                  </div>
+                  <h4
+                    style="
+                      font-size: 1.2rem;
+                      font-weight: 500;
+                      color: #2c3e50;
+                      margin-bottom: 0.5rem;
+                    "
+                  >
+                    GitHub
+                  </h4>
+                  <p
+                    style="
+                      color: #7f8c8d;
+                      font-size: 0.9rem;
+                      margin: 0;
+                    "
+                  >
+                    Açık kaynak projeler
+                  </p>
                 </a>
-                <a
-                  href="https://linkedin.com/in/ismailumutluoglu"
+              </div>
+
+              <!-- Medium -->
+              <div class="col-lg-4 col-md-6">
+                <a 
+                  href="https://medium.com/@ismailumutluoglu10"
                   target="_blank"
-                  class="social-link linkedin"
-                  aria-label="LinkedIn"
+                  style="
+                    display: block;
+                    background: #ffffff;
+                    border: 1px solid #e9ecef;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+                  "
+                  onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.1)'; this.style.borderColor='#00ab6c'"
+                  onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#e9ecef'"
                 >
-                  <i class="fab fa-linkedin"></i>
+                  <div
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      background: #f0fff4;
+                      border: 2px solid #d5f4e6;
+                      border-radius: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 1.5rem auto;
+                    "
+                  >
+                    <i class="fab fa-medium" style="color: #00ab6c; font-size: 1.5rem"></i>
+                  </div>
+                  <h4
+                    style="
+                      font-size: 1.2rem;
+                      font-weight: 500;
+                      color: #2c3e50;
+                      margin-bottom: 0.5rem;
+                    "
+                  >
+                    Medium
+                  </h4>
+                  <p
+                    style="
+                      color: #7f8c8d;
+                      font-size: 0.9rem;
+                      margin: 0;
+                    "
+                  >
+                    Teknik yazılar
+                  </p>
                 </a>
-                <a
-                  href="https://twitter.com/ismailumutluoglu"
-                  target="_blank"
-                  class="social-link twitter"
-                  aria-label="Twitter"
-                >
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a
+              </div>
+
+              <!-- Instagram -->
+              <div class="col-lg-4 col-md-6">
+                <a 
                   href="https://instagram.com/ismailumutluoglu"
                   target="_blank"
-                  class="social-link instagram"
-                  aria-label="Instagram"
+                  style="
+                    display: block;
+                    background: #ffffff;
+                    border: 1px solid #e9ecef;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+                  "
+                  onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.1)'; this.style.borderColor='#e4405f'"
+                  onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#e9ecef'"
                 >
-                  <i class="fab fa-instagram"></i>
+                  <div
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      background: #fef7f7;
+                      border: 2px solid #fadadd;
+                      border-radius: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 1.5rem auto;
+                    "
+                  >
+                    <i class="fab fa-instagram" style="color: #e4405f; font-size: 1.5rem"></i>
+                  </div>
+                  <h4
+                    style="
+                      font-size: 1.2rem;
+                      font-weight: 500;
+                      color: #2c3e50;
+                      margin-bottom: 0.5rem;
+                    "
+                  >
+                    Instagram
+                  </h4>
+                  <p
+                    style="
+                      color: #7f8c8d;
+                      font-size: 0.9rem;
+                      margin: 0;
+                    "
+                  >
+                    Günlük yaşam
+                  </p>
                 </a>
               </div>
-            </div>
-          </div>
 
-          <!-- Contact Form -->
-          <div class="contact-form-container">
-            <div class="form-header">
-              <h3>Mesaj Gönder</h3>
-              <p>
-                Proje teklifleri, sorular veya iş birliği önerileriniz için
-                formu kullanabilirsiniz.
-              </p>
-            </div>
-
-            <form id="contactForm" class="contact-form" novalidate>
-              <!-- Name and Email Row -->
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="firstName" class="form-label">Ad *</label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    class="form-input"
-                    placeholder="Adınız"
-                    required
-                    autocomplete="given-name"
-                  />
-                  <div class="form-error">Ad alanı zorunludur.</div>
-                </div>
-
-                <div class="form-group">
-                  <label for="email" class="form-label">Email *</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form-input"
-                    placeholder="ornek@email.com"
-                    required
-                    autocomplete="email"
-                  />
-                  <div class="form-error">
-                    Geçerli bir email adresi giriniz.
+              <!-- Twitter -->
+              <div class="col-lg-4 col-md-6">
+                <a 
+                  href="https://twitter.com/ismailumutluoglu"
+                  target="_blank"
+                  style="
+                    display: block;
+                    background: #ffffff;
+                    border: 1px solid #e9ecef;
+                    border-radius: 12px;
+                    padding: 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+                  "
+                  onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.1)'; this.style.borderColor='#1da1f2'"
+                  onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0, 0, 0, 0.05)'; this.style.borderColor='#e9ecef'"
+                >
+                  <div
+                    style="
+                      width: 60px;
+                      height: 60px;
+                      background: #f0f9ff;
+                      border: 2px solid #dbeafe;
+                      border-radius: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin: 0 auto 1.5rem auto;
+                    "
+                  >
+                    <i class="fab fa-twitter" style="color: #1da1f2; font-size: 1.5rem"></i>
                   </div>
-                </div>
+                  <h4
+                    style="
+                      font-size: 1.2rem;
+                      font-weight: 500;
+                      color: #2c3e50;
+                      margin-bottom: 0.5rem;
+                    "
+                  >
+                    Twitter
+                  </h4>
+                  <p
+                    style="
+                      color: #7f8c8d;
+                      font-size: 0.9rem;
+                      margin: 0;
+                    "
+                  >
+                    Güncel düşünceler
+                  </p>
+                </a>
               </div>
 
-              <!-- Subject -->
-              <div class="form-group">
-                <label for="subject" class="form-label">Konu *</label>
-                <select id="subject" name="subject" class="form-input" required>
-                  <option value="">Konu seçiniz</option>
-                  <option value="freelance">Freelance Proje</option>
-                  <option value="fulltime">Tam Zamanlı İş Teklifi</option>
-                  <option value="collaboration">İş Birliği</option>
-                  <option value="consultation">Danışmanlık</option>
-                  <option value="question">Soru/Bilgi</option>
-                  <option value="other">Diğer</option>
-                </select>
-                <div class="form-error">Lütfen bir konu seçiniz.</div>
-              </div>
-
-              <!-- Message -->
-              <div class="form-group">
-                <label for="message" class="form-label">Mesaj *</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  class="form-input form-textarea"
-                  placeholder="Mesajınızı buraya yazın..."
-                  required
-                  rows="4"
-                ></textarea>
-                <div class="form-error">
-                  Mesaj alanı zorunludur (minimum 10 karakter).
-                </div>
-              </div>
-
-              <!-- Submit Button -->
-              <button type="submit" class="form-submit">
-                <span class="submit-text">
-                  <i class="fas fa-paper-plane me-2"></i>Mesaj Gönder
-                </span>
-                <div class="submit-spinner"></div>
-              </button>
-
-              <!-- Success Message -->
-              <div class="form-success">
-                <i class="fas fa-check-circle me-2"></i>
-                Mesajınız başarıyla gönderildi! En kısa sürede size geri dönüş
-                yapacağım.
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <!-- Footer -->
-    <footer class="footer">
-      <!-- Footer Main Content -->
-      <div class="footer-main">
-        <div class="container">
-          <div class="footer-content">
-            <!-- Footer Brand Section -->
-            <div class="footer-brand">
-              <a href="#home" class="footer-logo">
-                <div class="footer-logo-icon">İUL</div>
-                <div class="footer-brand-text">İsmail Umut Luoğlu</div>
-              </a>
-
-              <p class="footer-description">
-                Tutkulu bir Full Stack Developer olarak modern teknolojiler
-                kullanarak kullanıcı odaklı, performanslı ve ölçeklenebilir web
-                uygulamaları geliştiriyorum.
+    <footer 
+      style="
+        background: #2c3e50;
+        color: #ffffff;
+        padding: 4rem 0 0 0;
+        position: relative;
+      "
+    >
+      <!-- Main Footer Content -->
+      <div class="container">
+        <div class="row">
+          
+          <!-- Brand Section -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div style="margin-bottom: 2rem">
+              <h3
+                style="
+                  font-size: 1.8rem;
+                  font-weight: 600;
+                  color: #ffffff;
+                  margin-bottom: 1rem;
+                "
+              >
+                İsmail Umutluoğlu
+              </h3>
+              <p
+                style="
+                  color: #bdc3c7;
+                  font-size: 1rem;
+                  line-height: 1.6;
+                  margin-bottom: 2rem;
+                "
+              >
+                Veri bilimi ve makine öğrenmesi alanında tutkulu bir geliştirici. 
+                Modern teknolojilerle anlamlı çözümler üretiyorum.
               </p>
-
-              <div class="footer-stats">
-                <div class="footer-stat">
-                  <span class="footer-stat-number">50+</span>
-                  <span class="footer-stat-label">Proje</span>
-                </div>
-                <div class="footer-stat">
-                  <span class="footer-stat-number">5+</span>
-                  <span class="footer-stat-label">Yıl Deneyim</span>
-                </div>
-                <div class="footer-stat">
-                  <span class="footer-stat-number">25+</span>
-                  <span class="footer-stat-label">Mutlu Müşteri</span>
-                </div>
-              </div>
-
-              <!-- Newsletter -->
-              <div class="footer-newsletter">
-                <h5 class="newsletter-title">📧 Bülten</h5>
-                <p class="newsletter-description">
-                  Yeni projeler ve teknoloji trendleri hakkında haberdar olmak
-                  için abone olun.
-                </p>
-                <form class="newsletter-form" id="newsletterForm">
-                  <input
-                    type="email"
-                    class="newsletter-input"
-                    placeholder="Email adresiniz"
-                    required
-                    aria-label="Email adresi"
-                  />
-                  <button type="submit" class="newsletter-btn">
-                    <i class="fas fa-paper-plane me-1"></i>Abone Ol
-                  </button>
-                </form>
-              </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="footer-section">
-              <h4>Hızlı Linkler</h4>
-              <ul class="footer-nav">
-                <li><a href="#home">Ana Sayfa</a></li>
-                <li><a href="#about">Hakkımda</a></li>
-                <li><a href="#experience">Deneyim</a></li>
-                <li><a href="#projects">Projeler</a></li>
-                <li><a href="#contact">İletişim</a></li>
-                <li><a href="/blog" target="_blank">Blog</a></li>
-              </ul>
-            </div>
-
-            <!-- Services -->
-            <div class="footer-section">
-              <h4>Hizmetler</h4>
-              <ul class="footer-nav">
-                <li><a href="#services">Web Geliştirme</a></li>
-                <li><a href="#services">Mobile App</a></li>
-                <li><a href="#services">UI/UX Tasarım</a></li>
-                <li><a href="#services">API Geliştirme</a></li>
-                <li><a href="#services">Danışmanlık</a></li>
-                <li><a href="#services">Eğitim & Mentoring</a></li>
-              </ul>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="footer-section">
-              <h4>İletişim</h4>
-              <ul class="footer-contact">
-                <li>
-                  <i class="fas fa-envelope"></i>
-                  <a href="mailto:ismailumutluoglu@gmail.com"
-                    >ismailumutluoglu@gmail.com</a
-                  >
-                </li>
-                <li>
-                  <i class="fas fa-phone"></i>
-                  <a href="tel:+905551234567">+90 555 123 45 67</a>
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i>
-                  <span>İstanbul, Türkiye</span>
-                </li>
-                <li>
-                  <i class="fas fa-clock"></i>
-                  <span>Pzt-Cum: 09:00 - 18:00</span>
-                </li>
-              </ul>
-
+              
               <!-- Social Media -->
-              <div class="footer-social">
-                <h5 class="footer-social-title">Takip Et</h5>
-                <div class="footer-social-links">
-                  <a
-                    href="https://github.com/ismailumutluoglu"
-                    target="_blank"
-                    class="footer-social-link github"
-                    aria-label="GitHub"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://linkedin.com/in/ismailumutluoglu"
-                    target="_blank"
-                    class="footer-social-link linkedin"
-                    aria-label="LinkedIn"
-                  >
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                  <a
-                    href="https://twitter.com/ismailumutluoglu"
-                    target="_blank"
-                    class="footer-social-link twitter"
-                    aria-label="Twitter"
-                  >
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a
-                    href="https://instagram.com/ismailumutluoglu"
-                    target="_blank"
-                    class="footer-social-link instagram"
-                    aria-label="Instagram"
-                  >
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
+              <div style="display: flex; gap: 1rem">
+                <a
+                  href="https://github.com/ismailumutluoglu"
+                  target="_blank"
+                  style="
+                    width: 45px;
+                    height: 45px;
+                    background: #34495e;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #ffffff;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.background='#3498db'; this.style.transform='translateY(-3px)'"
+                  onmouseout="this.style.background='#34495e'; this.style.transform='translateY(0)'"
+                >
+                  <i class="fab fa-github" style="font-size: 1.2rem"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/ismail-umutluoglu-a82955262"
+                  target="_blank"
+                  style="
+                    width: 45px;
+                    height: 45px;
+                    background: #34495e;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #ffffff;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.background='#0077b5'; this.style.transform='translateY(-3px)'"
+                  onmouseout="this.style.background='#34495e'; this.style.transform='translateY(0)'"
+                >
+                  <i class="fab fa-linkedin" style="font-size: 1.2rem"></i>
+                </a>
+                <a
+                  href="https://medium.com/@ismailumutluoglu10"
+                  target="_blank"
+                  style="
+                    width: 45px;
+                    height: 45px;
+                    background: #34495e;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #ffffff;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.background='#00ab6c'; this.style.transform='translateY(-3px)'"
+                  onmouseout="this.style.background='#34495e'; this.style.transform='translateY(0)'"
+                >
+                  <i class="fab fa-medium" style="font-size: 1.2rem"></i>
+                </a>
+                <a
+                  href="mailto:ismailumutluoglu10@gmail.com"
+                  style="
+                    width: 45px;
+                    height: 45px;
+                    background: #34495e;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #ffffff;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.background='#ea4335'; this.style.transform='translateY(-3px)'"
+                  onmouseout="this.style.background='#34495e'; this.style.transform='translateY(0)'"
+                >
+                  <i class="fas fa-envelope" style="font-size: 1.2rem"></i>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="footer-bottom-content">
-            <div class="footer-copyright">
-              <i class="fas fa-heart"></i>
-              <span>&copy; 2025 İsmail Umutluoğlu. Tüm Hakları Saklıdır.</span>
-            </div>
-
-            <ul class="footer-bottom-links">
-              <li><a href="/privacy">Gizlilik Politikası</a></li>
-              <li><a href="/terms">Kullanım Şartları</a></li>
-              <li><a href="/sitemap">Site Haritası</a></li>
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h4
+              style="
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #ffffff;
+                margin-bottom: 1.5rem;
+              "
+            >
+              Sayfalar
+            </h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+              "
+            >
+              <li style="margin-bottom: 0.8rem">
+                <a
+                  href="#home"
+                  style="
+                    color: #bdc3c7;
+                    text-decoration: none;
+                    font-size: 0.95rem;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.color='#3498db'"
+                  onmouseout="this.style.color='#bdc3c7'"
+                >
+                  Ana Sayfa
+                </a>
+              </li>
+              <li style="margin-bottom: 0.8rem">
+                <a
+                  href="#about"
+                  style="
+                    color: #bdc3c7;
+                    text-decoration: none;
+                    font-size: 0.95rem;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.color='#3498db'"
+                  onmouseout="this.style.color='#bdc3c7'"
+                >
+                  Hakkımda
+                </a>
+              </li>
+              <li style="margin-bottom: 0.8rem">
+                <a
+                  href="#experience"
+                  style="
+                    color: #bdc3c7;
+                    text-decoration: none;
+                    font-size: 0.95rem;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.color='#3498db'"
+                  onmouseout="this.style.color='#bdc3c7'"
+                >
+                  Deneyim
+                </a>
+              </li>
+              <li style="margin-bottom: 0.8rem">
+                <a
+                  href="#projects"
+                  style="
+                    color: #bdc3c7;
+                    text-decoration: none;
+                    font-size: 0.95rem;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.color='#3498db'"
+                  onmouseout="this.style.color='#bdc3c7'"
+                >
+                  Projelerim
+                </a>
+              </li>
+              <li style="margin-bottom: 0.8rem">
+                <a
+                  href="#contact"
+                  style="
+                    color: #bdc3c7;
+                    text-decoration: none;
+                    font-size: 0.95rem;
+                    transition: all 0.3s ease;
+                  "
+                  onmouseover="this.style.color='#3498db'"
+                  onmouseout="this.style.color='#bdc3c7'"
+                >
+                  İletişim
+                </a>
+              </li>
             </ul>
+          </div>
+
+          <!-- Tech Stack -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h4
+              style="
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #ffffff;
+                margin-bottom: 1.5rem;
+              "
+            >
+              Teknolojiler
+            </h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+              <span
+                style="
+                  background: #34495e;
+                  color: #ffffff;
+                  padding: 0.4rem 0.8rem;
+                  border-radius: 15px;
+                  font-size: 0.8rem;
+                  font-weight: 500;
+                "
+              >Python</span>
+              <span
+                style="
+                  background: #34495e;
+                  color: #ffffff;
+                  padding: 0.4rem 0.8rem;
+                  border-radius: 15px;
+                  font-size: 0.8rem;
+                  font-weight: 500;
+                "
+              >Machine Learning</span>
+              <span
+                style="
+                  background: #34495e;
+                  color: #ffffff;
+                  padding: 0.4rem 0.8rem;
+                  border-radius: 15px;
+                  font-size: 0.8rem;
+                  font-weight: 500;
+                "
+              >Data Science</span>
+              <span
+                style="
+                  background: #34495e;
+                  color: #ffffff;
+                  padding: 0.4rem 0.8rem;
+                  border-radius: 15px;
+                  font-size: 0.8rem;
+                  font-weight: 500;
+                "
+              >TensorFlow</span>
+              <span
+                style="
+                  background: #34495e;
+                  color: #ffffff;
+                  padding: 0.4rem 0.8rem;
+                  border-radius: 15px;
+                  font-size: 0.8rem;
+                  font-weight: 500;
+                "
+              >PyTorch</span>
+              <span
+                style="
+                  background: #34495e;
+                  color: #ffffff;
+                  padding: 0.4rem 0.8rem;
+                  border-radius: 15px;
+                  font-size: 0.8rem;
+                  font-weight: 500;
+                "
+              >Pandas</span>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h4
+              style="
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: #ffffff;
+                margin-bottom: 1.5rem;
+              "
+            >
+              İletişim
+            </h4>
+            <div style="margin-bottom: 1rem">
+              <div style="display: flex; align-items: center; margin-bottom: 0.8rem">
+                <i class="fas fa-envelope" style="color: #3498db; width: 20px; margin-right: 0.8rem"></i>
+                <span style="color: #bdc3c7; font-size: 0.95rem">ismailumutluoglu10@gmail.com</span>
+              </div>
+              <div style="display: flex; align-items: center; margin-bottom: 0.8rem">
+                <i class="fas fa-map-marker-alt" style="color: #3498db; width: 20px; margin-right: 0.8rem"></i>
+                <span style="color: #bdc3c7; font-size: 0.95rem">İstanbul, Türkiye</span>
+              </div>
+              <div style="display: flex; align-items: center">
+                <i class="fas fa-clock" style="color: #3498db; width: 20px; margin-right: 0.8rem"></i>
+                <span style="color: #bdc3c7; font-size: 0.95rem">7/24 Ulaşılabilir</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div
+          style="
+            border-top: 1px solid #34495e;
+            margin-top: 3rem;
+            padding: 2.5rem 0;
+            text-align: center;
+          "
+        >
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8">
+              
+              <!-- Main Copyright -->
+              <p
+                style="
+                  color: #95a5a6;
+                  font-size: 0.95rem;
+                  margin-bottom: 1.5rem;
+                  font-weight: 400;
+                "
+              >
+                &copy; 2025 İsmail Umutluoğlu. Tüm hakları saklıdır.
+              </p>
+              
+              <!-- Additional Info -->
+              <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-bottom: 1rem">
+                <div style="display: flex; align-items: center;">
+                  <i class="fas fa-code" style="color: #3498db; margin-right: 0.5rem; font-size: 0.9rem"></i>
+                  <span style="color: #7f8c8d; font-size: 0.85rem">Modern teknolojilerle geliştirildi</span>
+                </div>
+                <div style="display: flex; align-items: center;">
+                  <i class="fas fa-rocket" style="color: #f39c12; margin-right: 0.5rem; font-size: 0.9rem"></i>
+                  <span style="color: #7f8c8d; font-size: 0.85rem">Sürekli gelişim halinde</span>
+                </div>
+              </div>
+              
+            </div>
           </div>
         </div>
       </div>
