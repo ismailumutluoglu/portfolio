@@ -1,0 +1,66 @@
+/* ===== MAIN CSS FILE ===== */
+/* Bu dosya tüm CSS modüllerini import eder */
+
+/* === BASE STYLES === */
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/typography.css');
+
+/* === COMPONENTS === */
+@import url('./components/navigation.css');
+@import url('./components/hero.css');
+@import url('./components/about.css');
+@import url('./components/experience.css');
+@import url('./components/projects.css');
+@import url('./components/contact.css');
+@import url('./components/footer.css');
+
+/* === UTILITIES === */
+@import url('./utilities/animations.css');
+@import url('./utilities/responsive.css');
+
+/* === GLOBAL STYLES === */
+body {
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* === SCROLLBAR STYLING === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-400);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-500);
+}
+
+/* === SELECTION STYLING === */
+::selection {
+  background-color: var(--primary-200);
+  color: var(--primary-900);
+}
+
+::-moz-selection {
+  background-color: var(--primary-200);
+  color: var(--primary-900);
+}
+
+/* === FOCUS STYLING === */
+:focus-visible {
+  outline: 2px solid var(--primary-500);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* === SMOOTH TRANSITIONS === */
+* {
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+}
